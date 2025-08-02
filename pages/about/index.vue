@@ -55,10 +55,13 @@
             </div>
           </div>
           <div>
-            <img 
+            <OptimizedImage 
               src="/about-us.jpg" 
+              webp-src="/about-us.webp"
               alt="Traxis Manufacturing facility in Austin, Texas" 
               class="rounded-lg shadow-lg w-full"
+              width="800"
+              height="600"
             />
             <p class="text-sm text-gray-500 mt-3 text-center">
               Our Austin facility at 511 East Saint Elmo Road
@@ -355,6 +358,14 @@
           </div>
         </div>
       </div>
+      
+      <!-- Social Sharing -->
+      <div class="container-custom pt-8 border-t border-traxis-grey-200">
+        <SocialShare 
+          :title="'About Traxis Manufacturing - Austin CNC Machining Experts'"
+          :description="'Learn about our precision machining team and facility in Austin, Texas.'"
+        />
+      </div>
     </section>
 
     <!-- Local Community -->
@@ -465,14 +476,10 @@ const testimonials = [
   }
 ]
 
-useHead({
+useSEO({
   title: 'About Us - Meet Our Team | Traxis Manufacturing',
-  meta: [
-    { 
-      name: 'description', 
-      content: 'Learn about Traxis Manufacturing - Austin-based precision machining experts committed to quality, collaboration, and personalized service. Meet our experienced team and facility.' 
-    },
-    { name: 'keywords', content: 'about Traxis Manufacturing, Austin machining company, precision manufacturing team, CNC machining facility, quality certifications' }
-  ]
+  description: 'Learn about Traxis Manufacturing - Austin-based precision machining experts committed to quality, collaboration, and personalized service. Meet our experienced team and facility.',
+  keywords: 'about Traxis Manufacturing, Austin machining company, precision manufacturing team, CNC machining facility, quality certifications',
+  image: '/about-us.jpg'
 })
 </script>

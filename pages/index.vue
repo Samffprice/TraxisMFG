@@ -224,14 +224,10 @@
 // Icon component is auto-imported by @nuxt/icon
 
 // SEO
-useHead({
+useSEO({
   title: 'Traxis Manufacturing LLC - Precision CNC Machining with a Partnership Approach',
-  meta: [
-    { 
-      name: 'description', 
-      content: 'Austin-based precision CNC machining experts specializing in aerospace, medical, and industrial applications. Dedicated machinists providing personalized service for complex components.' 
-    },
-    { name: 'keywords', content: 'CNC machining, precision manufacturing, Austin Texas, aerospace parts, medical devices, industrial components, tight tolerances' }
-  ]
+  description: 'Austin-based precision CNC machining experts specializing in aerospace, medical, and industrial applications. Dedicated machinists providing personalized service for complex components.',
+  keywords: 'CNC machining, precision manufacturing, Austin Texas, aerospace parts, medical devices, industrial components, tight tolerances',
+  image: '/home-hero.jpg'
 })
 </script>

@@ -135,6 +135,7 @@
 
     <!-- Main Content -->
     <main class="flex-1">
+      <StructuredData />
       <slot />
     </main>
 

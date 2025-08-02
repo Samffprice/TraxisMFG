@@ -2,11 +2,14 @@
   <section class="relative bg-traxis-grey-900 text-white overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0">
-      <img 
+      <OptimizedImage 
         src="/home-hero.jpg" 
+        webp-src="/home-hero.webp"
         alt="Traxis Manufacturing CNC Machining" 
         class="w-full h-full object-cover"
         loading="eager"
+        width="1600"
+        height="900"
       />
       <div class="absolute inset-0 bg-traxis-grey-900 bg-opacity-60"></div>
     </div>

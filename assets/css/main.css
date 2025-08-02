@@ -38,4 +38,35 @@
   .industrial-card {
     @apply bg-white border border-traxis-grey-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
   }
+
+  /* Image optimization classes */
+  .responsive-img {
+    @apply w-full h-auto object-cover;
+    aspect-ratio: attr(width) / attr(height);
+  }
+
+  .hero-img {
+    @apply w-full h-full object-cover;
+    aspect-ratio: 16 / 9;
+  }
+
+  .card-img {
+    @apply w-full object-cover rounded-t-lg;
+    aspect-ratio: 4 / 3;
+  }
+
+  .profile-img {
+    @apply w-full object-cover rounded-full;
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Performance optimizations */
+  .critical-resource {
+    font-display: swap;
+  }
+
+  /* Minimize layout shift */
+  .layout-stable {
+    contain: layout style paint;
+  }
 }

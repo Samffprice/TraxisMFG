@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Breadcrumbs />
     <!-- Page Header -->
     <section class="bg-gradient-to-br from-traxis-grey-800 to-traxis-grey-900 text-white section-padding">
       <div class="container-custom">

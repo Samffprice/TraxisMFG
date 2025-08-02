@@ -1,0 +1,21 @@
+{
+  "name": "Traxis Manufacturing LLC",
+  "short_name": "Traxis MFG",
+  "description": "Precision CNC Machining with a Partnership Approach",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
