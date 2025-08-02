@@ -121,7 +121,7 @@
                 class="btn-outline"
                 @click="$emit('close')"
               >
-                Contact Us
+                Get Quote
               </NuxtLink>
             </div>
           </div>

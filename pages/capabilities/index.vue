@@ -64,7 +64,7 @@
               </li>
             </ul>
             <NuxtLink to="/capabilities/cnc-milling" class="btn-outline">
-              Learn More About Milling
+Explore CNC Milling
             </NuxtLink>
           </div>
 
@@ -100,7 +100,7 @@
               </li>
             </ul>
             <NuxtLink to="/capabilities/cnc-turning" class="btn-outline">
-              Learn More About Turning
+Discover CNC Turning
             </NuxtLink>
           </div>
         </div>
@@ -312,7 +312,7 @@
         
         <div class="text-center">
           <NuxtLink to="/capabilities/equipment" class="btn-primary text-lg px-8 py-4">
-            View Complete Equipment List
+See All Equipment
           </NuxtLink>
         </div>
       </div>
@@ -332,7 +332,7 @@
             Request a Quote
           </NuxtLink>
           <NuxtLink to="/contact" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
-            Contact Us
+            Start Project
           </NuxtLink>
         </div>
       </div>

@@ -154,11 +154,10 @@ export default defineNuxtConfig({
         '/request-quote'
       ]
     },
-    // Remove X-Powered-By header for security
+    // Performance optimizations
     routeRules: {
       '/**': { 
         headers: { 
-          'X-Powered-By': '',
           'Cache-Control': 'public, max-age=31536000, immutable'
         } 
       }

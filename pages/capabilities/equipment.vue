@@ -302,7 +302,7 @@
             Request a Quote
           </NuxtLink>
           <NuxtLink to="/capabilities" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
-            View All Capabilities
+    Explore Our Services
           </NuxtLink>
         </div>
       </div>

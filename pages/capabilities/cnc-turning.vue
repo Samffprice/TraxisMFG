@@ -24,7 +24,7 @@
               Get Turning Quote
             </NuxtLink>
             <NuxtLink to="/capabilities/equipment" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
-              View Equipment List
+              See Turning Equipment
             </NuxtLink>
           </div>
         </div>
@@ -230,7 +230,7 @@
             Request Turning Quote
           </NuxtLink>
           <NuxtLink to="/capabilities/equipment" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
-            View Equipment List
+            See Turning Equipment
           </NuxtLink>
         </div>
       </div>
