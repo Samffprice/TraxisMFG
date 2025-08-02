@@ -59,9 +59,9 @@
             </NuxtLink>
             
             <!-- Primary CTA -->
-            <NuxtLink to="/request-quote" class="btn-primary">
-              Request a Quote
-            </NuxtLink>
+                               <NuxtLink to="/request-quote" class="btn-primary">
+                     Request a Quote
+                   </NuxtLink>
           </div>
 
           <!-- Mobile Menu Button -->

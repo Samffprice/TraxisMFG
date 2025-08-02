@@ -154,11 +154,12 @@ export default defineNuxtConfig({
         '/request-quote'
       ]
     },
-    // Performance optimizations
+    // Performance optimizations and security headers
     routeRules: {
       '/**': { 
         headers: { 
-          'Cache-Control': 'public, max-age=31536000, immutable'
+          'Cache-Control': 'public, max-age=31536000, immutable',
+          'X-Powered-By': ''
         } 
       }
     }

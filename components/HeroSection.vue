@@ -29,10 +29,10 @@
         
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row gap-4">
-          <NuxtLink to="/request-quote" class="btn-primary text-lg px-8 py-4">
-            <Icon name="mdi:file-document-outline" class="w-5 h-5 mr-2" />
-            Request a Quote
-          </NuxtLink>
+                          <NuxtLink to="/request-quote" class="btn-primary text-lg px-8 py-4">
+                  <Icon name="mdi:file-document-outline" class="w-5 h-5 mr-2" />
+                  Request a Quote
+                </NuxtLink>
           <NuxtLink to="/work" class="btn-outline text-lg px-8 py-4 bg-white bg-opacity-10 border-white text-white hover:bg-white hover:text-traxis-grey-900">
             <Icon name="mdi:eye-outline" class="w-5 h-5 mr-2" />
             See Our Work
