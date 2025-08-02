@@ -394,7 +394,7 @@ const toggleFaq = (index) => {
 // SEO
 useSEO({
   title: 'Traxis Manufacturing - Precision CNC Machining | Austin, TX',
-  description: 'Austin-based CNC machining experts for aerospace, medical & industrial applications. Precision manufacturing with personalized service.',
+  description: 'Austin based CNC machining experts for aerospace, medical & industrial applications. High precision manufacturing with personalized service.',
   keywords: 'CNC machining, precision manufacturing, Austin Texas, aerospace parts, medical devices, industrial components, tight tolerances',
   image: '/home-hero.webp'
 })
