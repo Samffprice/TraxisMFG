@@ -179,7 +179,7 @@
             <ul class="space-y-2 text-sm">
               <li><NuxtLink to="/capabilities/cnc-milling" class="text-gray-300 hover:text-white transition-colors">CNC Milling</NuxtLink></li>
               <li><NuxtLink to="/capabilities/cnc-turning" class="text-gray-300 hover:text-white transition-colors">CNC Turning</NuxtLink></li>
-              <li><NuxtLink to="/capabilities/precision-machining" class="text-gray-300 hover:text-white transition-colors">Precision Machining</NuxtLink></li>
+              <li><NuxtLink to="/capabilities" class="text-gray-300 hover:text-white transition-colors">Precision Machining</NuxtLink></li>
               <li><NuxtLink to="/capabilities/materials" class="text-gray-300 hover:text-white transition-colors">Materials</NuxtLink></li>
             </ul>
           </div>

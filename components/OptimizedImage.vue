@@ -3,16 +3,13 @@
     <!-- WebP format for modern browsers -->
     <source 
       v-if="webpSrc" 
-      :srcset="generateSrcSet(webpSrc)" 
-      :sizes="sizes"
+      :srcset="webpSrc" 
       type="image/webp"
     >
     
     <!-- Fallback to original format -->
     <img 
       :src="src"
-      :srcset="generateSrcSet(src)"
-      :sizes="sizes"
       :alt="alt"
       :class="imageClass"
       :loading="loading"
@@ -68,16 +65,9 @@ const imageClass = computed(() => props.class)
 const generateSrcSet = (baseSrc) => {
   if (!baseSrc) return ''
   
-  const ext = baseSrc.split('.').pop()
-  const baseName = baseSrc.replace(`.${ext}`, '')
-  
-  // Generate different sizes for responsive images
-  return [
-    `${baseName}-400w.${ext} 400w`,
-    `${baseName}-800w.${ext} 800w`,
-    `${baseName}-1200w.${ext} 1200w`,
-    `${baseSrc} 1600w`
-  ].join(', ')
+  // For now, just return the base source since we don't have multiple sizes
+  // In production, you would generate multiple image sizes and use them here
+  return baseSrc
 }
 
 const onLoad = (event) => {

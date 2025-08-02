@@ -4,7 +4,9 @@ const STATIC_CACHE = [
   '/',
   '/traxislogo.webp',
   '/home-hero.webp',
-  '/about-us.webp',
+  '/home-hero.jpg',
+  '/about-us.webp', 
+  '/about-us.jpg',
   '/favicon.ico',
   '/favicon-32x32.png',
   '/favicon-16x16.png'

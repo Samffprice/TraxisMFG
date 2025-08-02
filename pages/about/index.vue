@@ -62,6 +62,7 @@
               class="rounded-lg shadow-lg w-full"
               width="800"
               height="600"
+              loading="lazy"
             />
             <p class="text-sm text-gray-500 mt-3 text-center">
               Our Austin facility at 511 East Saint Elmo Road

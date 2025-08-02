@@ -42,7 +42,7 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Austin-based precision CNC machining experts specializing in aerospace, medical, and industrial applications.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://traxismfg.com' },
-        { property: 'og:image', content: 'https://traxismfg.com/home-hero.jpg' },
+        { property: 'og:image', content: 'https://traxismfg.com/home-hero.webp' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'Traxis Manufacturing CNC Machining Facility' },
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Traxis Manufacturing LLC - Precision CNC Machining' },
         { name: 'twitter:description', content: 'Austin-based precision CNC machining experts specializing in aerospace, medical, and industrial applications.' },
-        { name: 'twitter:image', content: 'https://traxismfg.com/home-hero.jpg' },
+        { name: 'twitter:image', content: 'https://traxismfg.com/home-hero.webp' },
         { name: 'twitter:image:alt', content: 'Traxis Manufacturing CNC Machining Facility' },
         
         // Additional SEO meta tags
