@@ -121,7 +121,8 @@ export default defineNuxtConfig({
 
   // Performance optimizations
   experimental: {
-    payloadExtraction: false
+    payloadExtraction: false,
+    inlineSSRStyles: false
   },
   
   // CSS optimization
@@ -152,6 +153,15 @@ export default defineNuxtConfig({
         '/contact',
         '/request-quote'
       ]
+    },
+    // Remove X-Powered-By header for security
+    routeRules: {
+      '/**': { 
+        headers: { 
+          'X-Powered-By': '',
+          'Cache-Control': 'public, max-age=31536000, immutable'
+        } 
+      }
     }
   },
 

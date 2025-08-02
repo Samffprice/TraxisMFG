@@ -254,9 +254,10 @@ Complex aluminum manifold featuring multiple intersecting bores with
                 <p><strong>Material:</strong> Aluminum 6061-T6</p>
                 <p><strong>Tolerance:</strong> ±0.001" positional</p>
                 <p><strong>Process:</strong> 5-Axis CNC Milling</p>
+                <p><strong>Industry Standard:</strong> <a href="https://www.asme.org/" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">ASME Y14.5</a> GD&T</p>
               </div>
               <NuxtLink to="/work" class="btn-outline">
-                View All Projects
+                See Our Portfolio
               </NuxtLink>
             </div>
           </div>
@@ -316,11 +317,12 @@ Complex aluminum manifold featuring multiple intersecting bores with
                 Please Note: Our Specialization
               </h3>
               <p class="text-gray-600">
-To ensure we provide the highest level of precision and service for our core clients, 
+                To ensure we provide the highest level of precision and service for our core clients, 
                 Traxis Manufacturing focuses exclusively on industrial, aerospace, medical, and commercial 
                 applications. We do not offer services for individual automotive projects, including custom 
                 car parts or engine restoration work. This specialized focus allows us to dedicate our 
                 expertise and resources to the complex, tight-tolerance components that our partners depend on.
+                Learn more about <a href="https://www.fda.gov/medical-devices" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">FDA medical device standards</a> and <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aircraft" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">FAA aerospace regulations</a> we comply with.
               </p>
             </div>
           </div>
@@ -391,8 +393,8 @@ const toggleFaq = (index) => {
 
 // SEO
 useSEO({
-  title: 'Traxis Manufacturing LLC - Precision CNC Machining with a Partnership Approach',
-  description: 'Austin-based precision CNC machining experts specializing in aerospace, medical, and industrial applications. Dedicated machinists providing personalized service for complex components.',
+  title: 'Traxis Manufacturing - Precision CNC Machining | Austin, TX',
+  description: 'Austin-based CNC machining experts for aerospace, medical & industrial applications. Precision manufacturing with personalized service.',
   keywords: 'CNC machining, precision manufacturing, Austin Texas, aerospace parts, medical devices, industrial components, tight tolerances',
   image: '/home-hero.webp'
 })
