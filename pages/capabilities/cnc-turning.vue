@@ -110,15 +110,15 @@
             </p>
             <ul class="space-y-2 text-sm text-gray-600">
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-orange-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-orange-600 mr-2" />
                 External turning and facing
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-orange-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-orange-600 mr-2" />
                 Internal boring and reaming
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-orange-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-orange-600 mr-2" />
                 Threading and grooving
               </li>
             </ul>
@@ -136,15 +136,15 @@
             </p>
             <ul class="space-y-2 text-sm text-gray-600">
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-orange-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-orange-600 mr-2" />
                 Cross-hole drilling and milling
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-orange-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-orange-600 mr-2" />
                 Keyways and flats
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-orange-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-orange-600 mr-2" />
                 Complex geometries in one setup
               </li>
             </ul>
@@ -153,7 +153,7 @@
           <!-- Swiss Turning -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <div class="w-12 h-12 bg-traxis-red-600 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="mdi:precision-tool" class="w-6 h-6 text-white" />
+              <Icon name="mdi:cog-outline" class="w-6 h-6 text-white" />
             </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-4">Swiss-Style Turning</h3>
             <p class="text-gray-600 mb-4">
@@ -162,15 +162,15 @@
             </p>
             <ul class="space-y-2 text-sm text-gray-600">
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Small diameter precision parts
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Excellent surface finish
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 High-volume capability
               </li>
             </ul>

@@ -111,15 +111,15 @@
             </p>
             <ul class="space-y-2 text-sm text-traxis-grey-600">
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Work envelope up to 24" x 16" x 20"
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 High-speed spindles up to 15,000 RPM
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Automatic tool changers up to 40 tools
               </li>
             </ul>
@@ -137,15 +137,15 @@
             </p>
             <ul class="space-y-2 text-sm text-traxis-grey-600">
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-grey-700 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-grey-700 mr-2" />
                 Continuous rotary axis positioning
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-grey-700 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-grey-700 mr-2" />
                 Reduced setup time and improved accuracy
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-grey-700 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-grey-700 mr-2" />
                 Complex angular and helical features
               </li>
             </ul>
@@ -163,15 +163,15 @@
             </p>
             <ul class="space-y-2 text-sm text-traxis-grey-600">
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Simultaneous 5-axis capability
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Complex sculptured surfaces
               </li>
               <li class="flex items-center">
-                <Icon name="mdi:dot-circle" class="w-4 h-4 text-traxis-red-600 mr-2" />
+                <Icon name="mdi:circle-medium" class="w-4 h-4 text-traxis-red-600 mr-2" />
                 Aerospace and medical components
               </li>
             </ul>

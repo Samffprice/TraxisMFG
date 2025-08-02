@@ -146,7 +146,7 @@ Discover CNC Turning
           
           <div class="text-center">
             <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="mdi:copper" class="w-8 h-8 text-white" />
+              <Icon name="mdi:atom" class="w-8 h-8 text-white" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-2">Specialty Alloys</h3>
             <p class="text-sm text-gray-600">Titanium, Inconel, Brass</p>
