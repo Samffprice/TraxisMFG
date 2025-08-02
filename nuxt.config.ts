@@ -36,7 +36,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'Austin-based CNC machining experts for aerospace, medical & industrial applications. Precision manufacturing with personalized service.' 
+          content: 'Austin based CNC machining experts for aerospace, medical & industrial applications. High precision manufacturing with a personalized service.' 
         },
         { name: 'keywords', content: 'CNC machining, precision manufacturing, Austin Texas, aerospace parts, medical devices, industrial components' },
         { name: 'author', content: 'Traxis Manufacturing LLC' },
