@@ -8,8 +8,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Traxis Manufacturing LLC",
-  "url": "https://traxismfg.com",
-  "logo": "https://traxismfg.com/traxislogo.webp",
+  "url": "https://traxis-mfg.vercel.app",
+  "logo": "https://traxis-mfg.vercel.app/traxislogo.webp",
   "description": "Austin-based precision CNC machining experts specializing in aerospace, medical, and industrial applications.",
   "foundingDate": "2009",
   "address": {
@@ -34,9 +34,9 @@ const organizationSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://traxismfg.com/#LocalBusiness",
+  "@id": "https://traxis-mfg.vercel.app/#LocalBusiness",
   "name": "Traxis Manufacturing LLC",
-  "image": "https://traxismfg.com/about-us.jpg",
+  "image": "https://traxis-mfg.vercel.app/about-us.jpg",
   "description": "Precision CNC machining services with a partnership approach in Austin, Texas.",
   "address": {
     "@type": "PostalAddress",
@@ -51,7 +51,7 @@ const localBusinessSchema = {
     "latitude": "30.230",
     "longitude": "-97.744"
   },
-  "url": "https://traxismfg.com",
+  "url": "https://traxis-mfg.vercel.app",
   "telephone": "+1-512-XXX-XXXX",
   "priceRange": "$$",
   "openingHours": [
