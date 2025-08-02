@@ -325,43 +325,9 @@
       </div>
     </section>
 
-    <!-- Client Testimonials -->
+    <!-- Social Sharing -->
     <section class="section-padding bg-traxis-grey-50">
-      <div class="container-custom">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Clients Say
-          </h2>
-          <p class="text-xl text-gray-600">
-            Trusted partnerships built on quality and reliability
-          </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div
-            v-for="testimonial in testimonials"
-            :key="testimonial.id"
-            class="bg-white rounded-lg p-6 shadow-sm"
-          >
-            <div class="flex items-center mb-4">
-              <div class="flex space-x-1">
-                <Icon v-for="i in 5" :key="i" name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              </div>
-            </div>
-            <blockquote class="text-gray-700 mb-4 italic">
-              "{{ testimonial.quote }}"
-            </blockquote>
-            <footer class="text-sm">
-              <strong class="text-gray-900">{{ testimonial.author }}</strong>
-              <p class="text-gray-600">{{ testimonial.title }}</p>
-              <p class="text-gray-500">{{ testimonial.company }}</p>
-            </footer>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Social Sharing -->
-      <div class="container-custom pt-8 border-t border-traxis-grey-200">
+      <div class="container-custom text-center">
         <SocialShare 
           :title="'About Traxis Manufacturing - Austin CNC Machining Experts'"
           :description="'Learn about our precision machining team and facility in Austin, Texas.'"
@@ -453,29 +419,7 @@ const teamMembers = [
   }
 ]
 
-const testimonials = [
-  {
-    id: 1,
-    quote: "Traxis Manufacturing has been our go-to precision machining partner for over five years. Their attention to detail and collaborative approach consistently exceed our expectations.",
-    author: "Jennifer Walsh",
-    title: "Senior Engineering Manager",
-    company: "Aerospace Technology Company"
-  },
-  {
-    id: 2,
-    quote: "The team at Traxis truly understands our medical device requirements. Their quality systems and attention to regulatory compliance give us complete confidence in their work.",
-    author: "Dr. Mark Stevens",
-    title: "Chief Technology Officer",
-    company: "Medical Device Manufacturer"
-  },
-  {
-    id: 3,
-    quote: "Working with Traxis feels like having an extension of our own engineering team. Their DFM feedback has saved us significant time and money on multiple projects.",
-    author: "Carlos Mendoza",
-    title: "Product Development Director",
-    company: "Industrial Equipment Company"
-  }
-]
+
 
 useSEO({
   title: 'About Us - Meet Our Team | Traxis Manufacturing',

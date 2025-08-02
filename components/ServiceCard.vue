@@ -17,7 +17,7 @@
         :to="link" 
         class="text-traxis-red-600 hover:text-traxis-grey-700 font-semibold inline-flex items-center transition-colors"
       >
-        Learn More
+        {{ buttonText || 'Learn More' }}
         <Icon name="mdi:arrow-right" class="w-4 h-4 ml-1" />
       </NuxtLink>
     </div>
@@ -43,6 +43,10 @@ defineProps({
   link: {
     type: String,
     required: true
+  },
+  buttonText: {
+    type: String,
+    default: 'Learn More'
   }
 })
 </script>
