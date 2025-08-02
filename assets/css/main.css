@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-traxis-red-600 hover:bg-traxis-red-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-200 inline-flex items-center shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-traxis-grey-700 hover:bg-traxis-grey-800 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-200 inline-flex items-center shadow-md hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-traxis-red-600 text-traxis-red-600 hover:bg-traxis-red-600 hover:text-white font-semibold py-3 px-6 rounded-md transition-colors duration-200 inline-flex items-center;
+  }
+
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:transform hover:scale-105;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-traxis-red-600 to-traxis-grey-700 bg-clip-text text-transparent;
+  }
+
+  .accent-bar {
+    @apply bg-gradient-to-r from-traxis-red-600 to-traxis-red-500;
+  }
+
+  .industrial-card {
+    @apply bg-white border border-traxis-grey-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+}
