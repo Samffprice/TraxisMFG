@@ -56,7 +56,7 @@
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=800&h=600&fit=crop&crop=center" 
+              src="/about-us.jpg" 
               alt="Traxis Manufacturing facility in Austin, Texas" 
               class="rounded-lg shadow-lg w-full"
             />

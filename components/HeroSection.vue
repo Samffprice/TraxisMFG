@@ -3,8 +3,8 @@
     <!-- Background Image -->
     <div class="absolute inset-0">
       <img 
-        src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1920&h=1080&fit=crop&crop=center" 
-        alt="CNC Machine in operation" 
+        src="/home-hero.jpg" 
+        alt="Traxis Manufacturing CNC Machining" 
         class="w-full h-full object-cover"
         loading="eager"
       />
