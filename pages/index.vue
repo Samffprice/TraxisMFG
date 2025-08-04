@@ -37,42 +37,22 @@
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Traxis Manufacturing?
+            {{ servicesData?.title || 'Why Choose Traxis Manufacturing?' }}
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            We combine state-of-the-art precision technology with accessible, 
-            expert-driven human partnership to deliver exceptional results.
+            {{ servicesData?.description || 'We combine state-of-the-art precision technology with accessible, expert-driven human partnership to deliver exceptional results.' }}
           </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ServiceCard
-            icon="mdi:cog-outline"
-            title="Capabilities"
-            description="Advanced CNC milling and turning capabilities for complex geometries and tight tolerances across various materials."
-            link="/capabilities"
-            button-text="View Capabilities"
-          />
-          <ServiceCard
-            icon="mdi:briefcase-variant-outline"
-            title="Our Work"
-            description="Explore our portfolio of precision-machined components for aerospace, medical, and industrial applications."
-            link="/work"
-            button-text="See Portfolio"
-          />
-          <ServiceCard
-            icon="mdi:clipboard-list-outline"
-            title="Our Process"
-            description="Learn about our collaborative approach from design review to final delivery, ensuring quality at every step."
-            link="/process"
-            button-text="Our Workflow"
-          />
-          <ServiceCard
-            icon="mdi:account-group-outline"
-            title="About Us"
-            description="Meet our dedicated team of expert machinists and learn about our Austin-based facility and commitment to quality."
-            link="/about"
-            button-text="Meet Our Team"
+            v-for="service in servicesData?.services || []"
+            :key="service.title"
+            :icon="service.icon"
+            :title="service.title"
+            :description="service.description"
+            :link="service.link"
+            :button-text="service.buttonText"
           />
         </div>
       </div>
@@ -135,80 +115,32 @@ Specializing in high-stakes industries where failure is not an option.
             What Our Clients Say
           </h2>
           <p class="text-xl text-gray-600">
-            Real feedback from our valued customers
+            {{ testimonialsData?.description || 'Real feedback from our valued customers' }}
           </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <!-- Testimonial 1 -->
-          <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-traxis-red-600">
+          <div 
+            v-for="testimonial in testimonialsData?.testimonials || []"
+            :key="testimonial.name"
+            class="bg-white rounded-lg shadow-md p-6 border-l-4 border-traxis-red-600"
+          >
             <div class="flex items-start space-x-1 mb-4">
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
+              <Icon 
+                v-for="star in testimonial.rating" 
+                :key="star"
+                name="mdi:star" 
+                class="w-5 h-5 text-yellow-400" 
+              />
             </div>
             <p class="text-gray-600 mb-4 italic">
-              "Tom is a great guy and an excellent machinist. Traxis has been extremely reasonable on price and they'll work with you to figure out ways to reduce price through changes in design if needed. I've been using them for 3+ years on large assemblies and they've always come through on time with great looking parts."
+              "{{ testimonial.quote }}"
             </p>
             <div class="text-sm">
-              <p class="font-semibold text-gray-900">Chris A.</p>
-              <p class="text-gray-500">Local Guide • 4 years ago</p>
-            </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-traxis-red-600">
-            <div class="flex items-start space-x-1 mb-4">
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-            </div>
-            <p class="text-gray-600 mb-4 italic">
-              "I had a fabrication and custom design project. Brought it to Tom and within a week he delivered exactly what I was looking for. Good place to get custom fabrication, machining, welding etc. done"
-            </p>
-            <div class="text-sm">
-              <p class="font-semibold text-gray-900">Alex Senn</p>
-              <p class="text-gray-500">Local Guide • 7 years ago</p>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-traxis-red-600">
-            <div class="flex items-start space-x-1 mb-4">
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-            </div>
-            <p class="text-gray-600 mb-4 italic">
-              "The best machine shop in Austin, TX. Amazing service, and cutting edge technology. Thank you, Tom!"
-            </p>
-            <div class="text-sm">
-              <p class="font-semibold text-gray-900">Michael Graf</p>
-              <p class="text-gray-500">4 years ago</p>
-            </div>
-          </div>
-
-          <!-- Testimonial 4 -->
-          <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-traxis-red-600">
-            <div class="flex items-start space-x-1 mb-4">
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-              <Icon name="mdi:star" class="w-5 h-5 text-yellow-400" />
-            </div>
-            <p class="text-gray-600 mb-4 italic">
-              "Fantastic. Thomas really set me up right- I couldn't be happier"
-            </p>
-            <div class="text-sm">
-              <p class="font-semibold text-gray-900">Verified Customer</p>
-              <p class="text-gray-500">a year ago</p>
+              <p class="font-semibold text-gray-900">{{ testimonial.name }}</p>
+              <p class="text-gray-500">
+                {{ testimonial.company }}{{ testimonial.company && testimonial.timeAgo ? ' • ' : '' }}{{ testimonial.timeAgo }}
+              </p>
             </div>
           </div>
         </div>
@@ -279,7 +211,7 @@ Complex aluminum manifold featuring multiple intersecting bores with
         
         <div class="max-w-4xl mx-auto space-y-4">
           <div 
-            v-for="(faq, index) in faqs" 
+            v-for="(faq, index) in faqsData?.faqs || []" 
             :key="index"
             class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden"
           >
@@ -355,37 +287,22 @@ Complex aluminum manifold featuring multiple intersecting bores with
 
 <script setup>
 import { ref } from 'vue'
-// Icon component is auto-imported by @nuxt/icon
+
+// Query content collections
+const { data: testimonialsData } = await useAsyncData('home-testimonials', () => {
+  return queryCollection('content').path('/home-testimonials').first()
+})
+
+const { data: servicesData } = await useAsyncData('home-services', () => {
+  return queryCollection('content').path('/home-services').first()
+})
+
+const { data: faqsData } = await useAsyncData('home-faqs', () => {
+  return queryCollection('content').path('/home-faqs').first()
+})
 
 // FAQ functionality
 const activeFaq = ref(null)
-
-const faqs = [
-  {
-    question: "What is your typical lead time for a project?",
-    answer: "Our standard production timeline is typically 6 weeks from design approval to delivery. This allows us to dedicate the necessary time and attention to detail that high-precision components demand. For urgent requirements, expedited service may be available depending on project complexity and current capacity."
-  },
-  {
-    question: "What tolerances can you achieve?",
-    answer: "We routinely achieve tolerances as tight as ±0.001\" on critical dimensions. Our capabilities include positional tolerances, geometric dimensioning and tolerancing (GD&T), and surface finish requirements. Specific tolerances depend on part geometry, material, and machining process."
-  },
-  {
-    question: "What materials can you machine?",
-    answer: "We work with a wide range of materials including aluminum alloys (6061, 7075, 2024), stainless steels (303, 304, 316, 17-4 PH), engineering plastics (Delrin, PEEK, Ultem, Nylon), and specialty alloys (Titanium, Inconel, Brass). Contact us for specific material requirements not listed."
-  },
-  {
-    question: "What production volumes do you handle?",
-    answer: "We specialize in prototype to medium-volume production runs. This includes single prototypes for design validation, small batches (10-500 pieces), and medium production runs (500+ pieces). We focus on providing personalized service regardless of quantity."
-  },
-  {
-    question: "Do you provide Design for Manufacturability (DFM) feedback?",
-    answer: "Yes! DFM collaboration is a core part of our service. Our experienced machinists review your designs and provide recommendations to improve manufacturability, reduce costs, and enhance quality without compromising functionality. This collaborative approach often results in better parts at lower costs."
-  },
-  {
-    question: "What are your quality control and inspection procedures?",
-    answer: "Every part undergoes rigorous quality inspection using precision measurement equipment including CMM (Coordinate Measuring Machine). We provide first article inspection reports for initial parts and maintain statistical process control throughout production. All work is performed to ISO quality standards."
-  }
-]
 
 const toggleFaq = (index) => {
   activeFaq.value = activeFaq.value === index ? null : index
