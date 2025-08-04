@@ -1,0 +1,81 @@
+categories:
+  - title: "Aluminum Alloys"
+    icon: "mdi:gold"
+    color: "bg-gray-400"
+    materials:
+      - name: "6061-T6 (General Purpose)"
+        description: "Excellent machinability, good corrosion resistance, moderate strength"
+        applications: "Applications: General fabrication, brackets, housings"
+        featured: true
+      - name: "7075-T6 (High Strength)"
+        description: "High strength-to-weight ratio, excellent fatigue resistance"
+        applications: "Applications: Aerospace structural components, high-stress parts"
+        featured: false
+      - name: "2024-T3/T4 (Aerospace)"
+        description: "High strength, good fatigue resistance, aerospace certified"
+        applications: "Applications: Aircraft structures, aerospace components"
+        featured: false
+      - name: "5083-H116 (Marine Grade)"
+        description: "Excellent corrosion resistance, non-heat treatable"
+        applications: "Applications: Marine applications, chemical equipment"
+        featured: false
+  - title: "Stainless Steel"
+    icon: "mdi:iron"
+    color: "bg-gray-600"
+    materials:
+      - name: "303 (Free Machining)"
+        description: "Excellent machinability, good corrosion resistance"
+        applications: "Applications: Machined components, fasteners, shafts"
+        featured: false
+      - name: "304/304L (General Purpose)"
+        description: "Good corrosion resistance, formable, weldable"
+        applications: "Applications: Food processing, chemical equipment"
+        featured: false
+      - name: "316/316L (Corrosion Resistant)"
+        description: "Superior corrosion resistance, medical grade"
+        applications: "Applications: Medical devices, marine, pharmaceutical"
+        featured: false
+      - name: "17-4 PH (Precipitation Hardening)"
+        description: "High strength, good corrosion resistance, heat treatable"
+        applications: "Applications: Aerospace, high-strength applications"
+        featured: false
+  - title: "Engineering Plastics"
+    icon: "mdi:diamond-stone"
+    color: "bg-yellow-600"
+    materials:
+      - name: "Delrin (POM) - Acetal"
+        description: "Excellent machinability, low friction, good dimensional stability"
+        applications: "Applications: Gears, bearings, mechanical components"
+        featured: false
+      - name: "PEEK (Polyetheretherketone)"
+        description: "High temperature resistance, chemical resistance, biocompatible"
+        applications: "Applications: Medical implants, aerospace, chemical processing"
+        featured: false
+      - name: "Ultem (PEI) - Polyetherimide"
+        description: "High strength, flame retardant, electrical insulation"
+        applications: "Applications: Aerospace interiors, electrical components"
+        featured: false
+      - name: "Nylon 6/6 (PA6)"
+        description: "High strength, good wear resistance, chemical resistance"
+        applications: "Applications: Mechanical components, automotive parts"
+        featured: false
+  - title: "Specialty Alloys"
+    icon: "mdi:diamond"
+    color: "bg-purple-600"
+    materials:
+      - name: "Titanium Ti-6Al-4V (Grade 5)"
+        description: "High strength-to-weight ratio, biocompatible, corrosion resistant"
+        applications: "Applications: Aerospace, medical implants, racing"
+        featured: false
+      - name: "Inconel 718"
+        description: "High temperature strength, oxidation resistant"
+        applications: "Applications: Jet engine components, gas turbines"
+        featured: false
+      - name: "Brass C360 (Free Cutting)"
+        description: "Excellent machinability, good corrosion resistance"
+        applications: "Applications: Fittings, electrical components, decorative parts"
+        featured: false
+      - name: "Tool Steels (A2, D2, O1)"
+        description: "High hardness, wear resistance, heat treatable"
+        applications: "Applications: Tooling, dies, wear components"
+        featured: false

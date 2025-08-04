@@ -1,0 +1,15 @@
+heading: "Prefer to Talk Directly?"
+description: "Our team is ready to discuss your project requirements and answer any questions."
+phone:
+  icon: "mdi:phone"
+  color: "bg-traxis-grey-50"
+  title: "Call Us"
+  local: "Local: (512) 383-0089"
+  tollFree: "Toll-Free: 1 (888) 982-0898"
+  hours: "Monday - Friday: 8:00 AM - 4:30 PM CST"
+email:
+  icon: "mdi:email"
+  color: "bg-orange-50"
+  title: "Email Us"
+  address: "sales@traxismfg.com"
+  responseTime: "We typically respond to emails within 4 business hours"

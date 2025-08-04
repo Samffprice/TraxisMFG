@@ -1,0 +1,9 @@
+title: "Contact Us"
+description: "Ready to discuss your precision machining needs? Get in touch with our team for personalized service and expert guidance on your next project."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "Call (512) 383-0089"
+  link: "tel:+15123830089"
+  phone: "+15123830089"

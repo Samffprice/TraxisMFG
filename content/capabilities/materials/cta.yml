@@ -1,0 +1,8 @@
+heading: "Need Help Selecting Materials?"
+description: "Our material experts can help you choose the optimal material for your application, considering performance, cost, and manufacturability."
+primaryButton:
+  text: "Request Material Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "Material Consultation"
+  link: "/contact"

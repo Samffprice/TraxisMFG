@@ -1,0 +1,20 @@
+heading: "What Our Clients Say"
+subheading: "Trusted partners across aerospace, medical, and industrial sectors"
+testimonials:
+  - id: 1
+    quote: "Traxis Manufacturing consistently delivers exceptional quality parts on time. Their attention to detail and collaborative approach make them our preferred machining partner."
+    author: "Sarah Johnson"
+    title: "Lead Engineer"
+    company: "Leading Aerospace Company"
+  
+  - id: 2
+    quote: "The team at Traxis goes above and beyond to understand our requirements. Their DFM feedback has saved us both time and money on multiple projects."
+    author: "Michael Chen"
+    title: "Product Development Manager"
+    company: "Medical Device Manufacturer"
+  
+  - id: 3
+    quote: "Working with Traxis feels like having an extension of our own engineering team. Their expertise in precision machining is unmatched in the Austin area."
+    author: "Robert Martinez"
+    title: "Operations Director"
+    company: "Industrial Equipment Company"

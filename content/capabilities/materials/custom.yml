@@ -1,0 +1,10 @@
+heading: "Don't See Your Material?"
+description: "We regularly work with specialty materials not listed here. Contact us to discuss your specific material requirements."
+noticeTitle: "Customer-Supplied Materials"
+noticeDescription: "We can work with customer-supplied materials when you have specific sourcing requirements or specialty alloys. We'll need material certifications and specifications to ensure proper machining parameters."
+noticeIcon: "mdi:information"
+requirements:
+  - "Material certification required"
+  - "Machining parameters verified"
+  - "Additional setup time may apply"
+  - "Quality guarantee on workmanship only"

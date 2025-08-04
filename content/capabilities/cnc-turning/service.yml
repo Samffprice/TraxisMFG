@@ -1,0 +1,16 @@
+heading: "Precision Turning Excellence"
+paragraphs:
+  - "Our CNC turning services deliver exceptional precision for round components, shafts, and cylindrical parts. With advanced lathes featuring live tooling and multi-axis capabilities, we can complete complex parts in a single setup, ensuring superior accuracy and surface finish."
+  - "From simple pins to complex aerospace shafts, our turning capabilities handle everything from prototype quantities to medium production runs with consistent quality and dimensional accuracy."
+image:
+  src: "https://images.unsplash.com/photo-1581091913692-7c5b6bbee7b7?w=800&h=600&fit=crop&crop=center"
+  alt: "High-precision CNC turning machine with live tooling"
+capabilities:
+  - text: "Live tooling for milling operations"
+    icon: "mdi:check-circle"
+  - text: "Swiss-style precision turning"
+    icon: "mdi:check-circle"
+  - text: "Multi-axis simultaneous machining"
+    icon: "mdi:check-circle"
+  - text: "Complete parts in single setup"
+    icon: "mdi:check-circle"

@@ -1,0 +1,82 @@
+title: "CNC Milling Centers"
+icon: "mdi:cog"
+color: "bg-traxis-red-600"
+machines:
+  - name: "Haas VF-4SS Super Speed"
+    specs:
+      - label: "Type"
+        value: "3-Axis Vertical Machining Center"
+        icon: "mdi:settings"
+        hasIcon: true
+      - label: "Travel"
+        value: "50\" x 20\" x 25\" (X, Y, Z)"
+        icon: "mdi:arrow-expand-all"
+        hasIcon: true
+      - label: "Spindle"
+        value: "15,000 RPM, 40-taper"
+        icon: "mdi:speedometer"
+        hasIcon: true
+      - label: "Tool Changer"
+        value: "24-station automatic"
+        icon: "mdi:wrench"
+        hasIcon: true
+      - label: "Features"
+        value: "High-speed machining, flood coolant, programmable coolant"
+        icon: "mdi:star"
+        hasIcon: true
+  - name: "DMG Mori DMU 50 ecoline"
+    specs:
+      - label: "Type"
+        value: "5-Axis Universal Machining Center"
+        icon: "mdi:settings"
+        hasIcon: true
+      - label: "Travel"
+        value: "24\" x 20\" x 18\" (X, Y, Z)"
+        icon: "mdi:arrow-expand-all"
+        hasIcon: true
+      - label: "Spindle"
+        value: "12,000 RPM, HSK-A63"
+        icon: "mdi:speedometer"
+        hasIcon: true
+      - label: "Tool Changer"
+        value: "42-station magazine"
+        icon: "mdi:wrench"
+        hasIcon: true
+      - label: "Features"
+        value: "Simultaneous 5-axis, tilting rotary table, automatic work setup"
+        icon: "mdi:star"
+        hasIcon: true
+  - name: "Mazak VCN-530C"
+    specs:
+      - label: "Type"
+        value: "3-Axis Vertical Machining Center"
+        hasIcon: false
+      - label: "Travel"
+        value: "41\" x 20\" x 20\" (X, Y, Z)"
+        hasIcon: false
+      - label: "Spindle"
+        value: "10,000 RPM, 40-taper"
+        hasIcon: false
+      - label: "Tool Changer"
+        value: "30-station automatic"
+        hasIcon: false
+      - label: "Features"
+        value: "Rigid tapping, through-spindle coolant, chip conveyor"
+        hasIcon: false
+  - name: "Okuma Genos M560-V"
+    specs:
+      - label: "Type"
+        value: "4-Axis Vertical Machining Center"
+        hasIcon: false
+      - label: "Travel"
+        value: "22\" x 15.7\" x 15.7\" (X, Y, Z)"
+        hasIcon: false
+      - label: "Spindle"
+        value: "12,000 RPM, 40-taper"
+        hasIcon: false
+      - label: "Tool Changer"
+        value: "20-station automatic"
+        hasIcon: false
+      - label: "Features"
+        value: "4th axis rotary table, thermal compensation, precision spindle"
+        hasIcon: false

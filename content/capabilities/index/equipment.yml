@@ -1,0 +1,15 @@
+heading: "State-of-the-Art Equipment"
+subheading: "Modern CNC machinery for precision and efficiency"
+equipment:
+  - title: "5-Axis Machining Centers"
+    description: "Complex geometries in single setups"
+    icon: "mdi:cog"
+  - title: "CNC Lathes with Live Tooling"
+    description: "Complete turning and milling operations"
+    icon: "mdi:rotate-3d-variant"
+  - title: "CMM Inspection"
+    description: "Precision measurement and quality assurance"
+    icon: "mdi:ruler"
+button:
+  text: "See All Equipment"
+  link: "/capabilities/equipment"

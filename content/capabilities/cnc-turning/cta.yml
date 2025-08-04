@@ -1,0 +1,8 @@
+heading: "Ready to Start Your Turning Project?"
+description: "Contact us to discuss your CNC turning requirements and get a detailed quote."
+primaryButton:
+  text: "Request Turning Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "See Turning Equipment"
+  link: "/capabilities/equipment"

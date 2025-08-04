@@ -1,0 +1,12 @@
+title: "Our Equipment List"
+description: "State-of-the-art CNC machinery and precision measurement equipment for complex geometries and tight tolerance manufacturing."
+breadcrumbs:
+  - text: "Home"
+    link: "/"
+  - text: "Capabilities"
+    link: "/capabilities"
+  - text: "Equipment List"
+    link: "/capabilities/equipment"
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"

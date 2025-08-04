@@ -1,0 +1,30 @@
+heading: "Our Turning Capabilities"
+subheading: "Comprehensive turning solutions for diverse manufacturing needs"
+capabilities:
+  - title: "Conventional Turning"
+    description: "Traditional turning operations for external and internal features including facing, turning, boring, and threading operations."
+    icon: "mdi:rotate-right"
+    color: "bg-orange-600"
+    features:
+      - "External turning and facing"
+      - "Internal boring and reaming"
+      - "Threading and grooving"
+    featured: false
+  - title: "Live Tooling"
+    description: "Powered tooling capabilities allow milling, drilling, and cross-hole operations while the part remains in the turning setup."
+    icon: "mdi:cog"
+    color: "bg-orange-600"
+    features:
+      - "Cross-hole drilling and milling"
+      - "Keyways and flats"
+      - "Complex geometries in one setup"
+    featured: true
+  - title: "Swiss-Style Turning"
+    description: "High-precision turning for small diameter parts with excellent surface finish and tight tolerances."
+    icon: "mdi:cog-outline"
+    color: "bg-traxis-red-600"
+    features:
+      - "Small diameter precision parts"
+      - "Excellent surface finish"
+      - "High-volume capability"
+    featured: false

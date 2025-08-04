@@ -1,0 +1,7 @@
+heading: "Stay Updated"
+description: "Subscribe to our newsletter for industry insights, company updates, and precision machining tips."
+placeholder: "Enter your email address"
+button:
+  default: "Subscribe"
+  submitting: "Subscribing..."
+privacy: "We respect your privacy. Unsubscribe at any time."

@@ -1,0 +1,13 @@
+filters:
+  - label: "All Projects"
+    value: "all"
+  - label: "Aerospace"
+    value: "aerospace"
+  - label: "Medical"
+    value: "medical"
+  - label: "Industrial"
+    value: "industrial"
+  - label: "CNC Milling"
+    value: "milling"
+  - label: "CNC Turning"
+    value: "turning"

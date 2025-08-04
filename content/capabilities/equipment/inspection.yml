@@ -1,0 +1,60 @@
+title: "Inspection & Quality Control"
+icon: "mdi:ruler"
+color: "bg-green-600"
+machines:
+  - name: "Zeiss Contura G2 CMM"
+    specs:
+      - label: "Type"
+        value: "Coordinate Measuring Machine"
+        hasIcon: false
+      - label: "Measuring Volume"
+        value: "20\" x 12\" x 8\""
+        hasIcon: false
+      - label: "Accuracy"
+        value: "±0.0002\" (±5 μm)"
+        hasIcon: false
+      - label: "Features"
+        value: "VAST XTR scanning probe, climate compensation, Calypso software"
+        hasIcon: false
+  - name: "Mitutoyo Height Gages"
+    specs:
+      - label: "Type"
+        value: "Digital Height Measuring"
+        hasIcon: false
+      - label: "Range"
+        value: "12\" and 24\" models"
+        hasIcon: false
+      - label: "Resolution"
+        value: "0.00005\" (1 μm)"
+        hasIcon: false
+      - label: "Features"
+        value: "Statistical analysis, air bearing, granite surface plate"
+        hasIcon: false
+  - name: "Optical Comparator"
+    specs:
+      - label: "Type"
+        value: "Profile Projector"
+        hasIcon: false
+      - label: "Screen"
+        value: "14\" diameter"
+        hasIcon: false
+      - label: "Magnification"
+        value: "10X, 20X, 50X, 100X"
+        hasIcon: false
+      - label: "Features"
+        value: "Digital readout, edge detection, angle measurement"
+        hasIcon: false
+  - name: "Surface Roughness Tester"
+    specs:
+      - label: "Type"
+        value: "Portable Surface Measurement"
+        hasIcon: false
+      - label: "Parameters"
+        value: "Ra, Rz, Rmax measurement"
+        hasIcon: false
+      - label: "Range"
+        value: "0.1 to 320 μin Ra"
+        hasIcon: false
+      - label: "Features"
+        value: "Data logging, statistical analysis, profile display"
+        hasIcon: false

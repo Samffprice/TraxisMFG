@@ -1,0 +1,27 @@
+heading: "Our Core Services"
+subheading: "Comprehensive CNC machining services with expertise in complex geometries, tight tolerances, and challenging materials."
+services:
+  - title: "CNC Milling"
+    description: "High-precision milling services for complex components requiring tight tolerances. Our 3-axis, 4-axis, and 5-axis capabilities handle everything from simple brackets to intricate aerospace components."
+    icon: "mdi:cog"
+    color: "bg-traxis-red-600"
+    features:
+      - "3, 4, and 5-axis milling capabilities"
+      - "Complex geometries and contours"
+      - "Tight tolerances to ±0.001\""
+      - "Wide range of materials"
+    button:
+      text: "Explore CNC Milling"
+      link: "/capabilities/cnc-milling"
+  - title: "CNC Turning"
+    description: "Precision turning services for round components, shafts, and cylindrical parts. Our advanced lathes with live tooling provide complete machining solutions in a single setup."
+    icon: "mdi:rotate-3d-variant"
+    color: "bg-orange-600"
+    features:
+      - "Live tooling capabilities"
+      - "Swiss-style precision turning"
+      - "Multi-axis simultaneous machining"
+      - "Small to medium production runs"
+    button:
+      text: "Discover CNC Turning"
+      link: "/capabilities/cnc-turning"

@@ -1,0 +1,10 @@
+contactSuccess:
+  icon: "mdi:check-circle"
+  title: "Message Sent Successfully!"
+  message: "Thank you for contacting us. We'll get back to you within one business day."
+  button: "Close"
+newsletterSuccess:
+  icon: "mdi:email-check"
+  title: "Successfully Subscribed!"
+  message: "You've been added to our newsletter. Thank you for your interest in Traxis Manufacturing."
+  button: "Close"

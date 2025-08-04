@@ -1,0 +1,8 @@
+heading: "Ready to Utilize Our Equipment?"
+description: "Our state-of-the-art equipment is ready to tackle your most challenging precision machining projects. Get started with a detailed quote."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "Explore Our Services"
+  link: "/capabilities"

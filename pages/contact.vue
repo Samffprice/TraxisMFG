@@ -5,18 +5,17 @@
       <div class="container-custom">
         <div class="max-w-4xl">
           <h1 class="text-4xl md:text-5xl font-bold mb-6">
-            Contact Us
+            {{ contactHeader?.title }}
           </h1>
           <p class="text-xl md:text-2xl text-traxis-grey-100 mb-8">
-            Ready to discuss your precision machining needs? Get in touch with our team 
-            for personalized service and expert guidance on your next project.
+            {{ contactHeader?.description }}
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <NuxtLink to="/request-quote" class="btn-secondary text-lg px-8 py-4">
-              Request a Quote
+            <NuxtLink :to="contactHeader?.primaryButton?.link || '/request-quote'" class="btn-secondary text-lg px-8 py-4">
+              {{ contactHeader?.primaryButton?.text || 'Request a Quote' }}
             </NuxtLink>
-            <a href="tel:+15123830089" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
-              Call (512) 383-0089
+            <a :href="contactHeader?.secondaryButton?.link || 'tel:+15123830089'" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
+              {{ contactHeader?.secondaryButton?.text || 'Call (512) 383-0089' }}
             </a>
           </div>
         </div>
@@ -29,25 +28,25 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Contact Information -->
           <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">{{ contactInfo?.heading }}</h2>
             
             <!-- Contact Methods -->
             <div class="space-y-8 mb-8">
               <!-- Phone -->
               <div class="flex items-start">
-                <div class="w-12 h-12 bg-traxis-red-600 rounded-lg flex items-center justify-center mr-4">
-                  <Icon name="mdi:phone" class="w-6 h-6 text-white" />
+                <div :class="`w-12 h-12 ${contactInfo?.phone?.color} rounded-lg flex items-center justify-center mr-4`">
+                  <Icon :name="contactInfo?.phone?.icon" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ contactInfo?.phone?.title }}</h3>
                   <div class="space-y-1">
                     <p class="text-gray-600">
-                      <strong>Local:</strong> 
-                      <a href="tel:+15123830089" class="text-traxis-red-600 hover:text-traxis-red-700">(512) 383-0089</a>
+                      <strong>{{ contactInfo?.phone?.local?.label }}</strong> 
+                      <a :href="contactInfo?.phone?.local?.link" class="text-traxis-red-600 hover:text-traxis-red-700">{{ contactInfo?.phone?.local?.number }}</a>
                     </p>
                     <p class="text-gray-600">
-                      <strong>Toll-Free:</strong> 
-                      <a href="tel:+18889820898" class="text-traxis-red-600 hover:text-traxis-red-700">1 (888) 982-0898</a>
+                      <strong>{{ contactInfo?.phone?.tollFree?.label }}</strong> 
+                      <a :href="contactInfo?.phone?.tollFree?.link" class="text-traxis-red-600 hover:text-traxis-red-700">{{ contactInfo?.phone?.tollFree?.number }}</a>
                     </p>
                   </div>
                 </div>
@@ -55,19 +54,19 @@
 
               <!-- Email -->
               <div class="flex items-start">
-                <div class="w-12 h-12 bg-traxis-grey-700 rounded-lg flex items-center justify-center mr-4">
-                  <Icon name="mdi:email" class="w-6 h-6 text-white" />
+                <div :class="`w-12 h-12 ${contactInfo?.email?.color} rounded-lg flex items-center justify-center mr-4`">
+                  <Icon :name="contactInfo?.email?.icon" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ contactInfo?.email?.title }}</h3>
                   <div class="space-y-1">
                     <p class="text-gray-600">
-                      <strong>Sales & Quotes:</strong> 
-                      <a href="mailto:sales@traxismfg.com" class="text-traxis-red-600 hover:text-traxis-red-700">sales@traxismfg.com</a>
+                      <strong>{{ contactInfo?.email?.sales?.label }}</strong> 
+                      <a :href="contactInfo?.email?.sales?.link" class="text-traxis-red-600 hover:text-traxis-red-700">{{ contactInfo?.email?.sales?.address }}</a>
                     </p>
                     <p class="text-gray-600">
-                      <strong>General:</strong> 
-                      <a href="mailto:info@traxismfg.com" class="text-traxis-red-600 hover:text-traxis-red-700">info@traxismfg.com</a>
+                      <strong>{{ contactInfo?.email?.general?.label }}</strong> 
+                      <a :href="contactInfo?.email?.general?.link" class="text-traxis-red-600 hover:text-traxis-red-700">{{ contactInfo?.email?.general?.address }}</a>
                     </p>
                   </div>
                 </div>
@@ -75,32 +74,32 @@
 
               <!-- Address -->
               <div class="flex items-start">
-                <div class="w-12 h-12 bg-traxis-red-600 rounded-lg flex items-center justify-center mr-4">
-                  <Icon name="mdi:map-marker" class="w-6 h-6 text-white" />
+                <div :class="`w-12 h-12 ${contactInfo?.address?.color} rounded-lg flex items-center justify-center mr-4`">
+                  <Icon :name="contactInfo?.address?.icon" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Address</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ contactInfo?.address?.title }}</h3>
                   <div class="text-gray-600">
-                    <p>Traxis Manufacturing LLC</p>
-                    <p>511 East Saint Elmo Road</p>
-                    <p>Austin, TX 78745</p>
-                    <p>United States</p>
+                    <p>{{ contactInfo?.address?.company }}</p>
+                    <p>{{ contactInfo?.address?.street }}</p>
+                    <p>{{ contactInfo?.address?.city }}</p>
+                    <p>{{ contactInfo?.address?.country }}</p>
                   </div>
                 </div>
               </div>
 
               <!-- Business Hours -->
               <div class="flex items-start">
-                <div class="w-12 h-12 bg-traxis-grey-700 rounded-lg flex items-center justify-center mr-4">
-                  <Icon name="mdi:clock-outline" class="w-6 h-6 text-white" />
+                <div :class="`w-12 h-12 ${contactInfo?.hours?.color} rounded-lg flex items-center justify-center mr-4`">
+                  <Icon :name="contactInfo?.hours?.icon" class="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold text-gray-900 mb-2">Business Hours</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ contactInfo?.hours?.title }}</h3>
                   <div class="space-y-1 text-gray-600">
-                    <p><strong>Monday - Friday:</strong> 8:00 AM - 4:30 PM</p>
-                    <p><strong>Saturday:</strong> By Appointment</p>
-                    <p><strong>Sunday:</strong> Closed</p>
-                    <p class="text-sm text-gray-500">(Central Standard Time)</p>
+                    <p><strong>{{ contactInfo?.hours?.weekdays }}</strong></p>
+                    <p><strong>{{ contactInfo?.hours?.saturday }}</strong></p>
+                    <p><strong>{{ contactInfo?.hours?.sunday }}</strong></p>
+                    <p class="text-sm text-gray-500">{{ contactInfo?.hours?.timezone }}</p>
                   </div>
                 </div>
               </div>
@@ -108,23 +107,18 @@
 
             <!-- Social Links -->
             <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-4">Connect With Us</h3>
+              <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ contactInfo?.social?.title }}</h3>
               <div class="flex space-x-4">
                 <a 
-                  href="https://linkedin.com/company/traxis-manufacturing" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="w-10 h-10 bg-traxis-red-600 rounded-lg flex items-center justify-center text-white hover:bg-traxis-red-700 transition-colors"
-                  aria-label="LinkedIn"
+                  v-for="link in contactInfo?.social?.links"
+                  :key="link.platform"
+                  :href="link.url" 
+                  :target="link.platform === 'LinkedIn' ? '_blank' : undefined"
+                  :rel="link.platform === 'LinkedIn' ? 'noopener noreferrer' : undefined"
+                  :class="`w-10 h-10 ${link.color} rounded-lg flex items-center justify-center text-white transition-colors`"
+                  :aria-label="link.label"
                 >
-                  <Icon name="mdi:linkedin" class="w-5 h-5" />
-                </a>
-                <a 
-                  href="mailto:sales@traxismfg.com"
-                  class="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center text-white hover:bg-orange-700 transition-colors"
-                  aria-label="Email"
-                >
-                  <Icon name="mdi:email" class="w-5 h-5" />
+                  <Icon :name="link.icon" class="w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -133,10 +127,9 @@
           <!-- Contact Form -->
           <div>
             <div class="bg-gray-50 rounded-lg p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ contactForm?.title }}</h3>
               <p class="text-gray-600 mb-6">
-                Have a general question or want to learn more about our capabilities? 
-                Use this form for non-quote inquiries.
+                {{ contactForm?.description }}
               </p>
               
               <form @submit.prevent="submitContactForm">
@@ -147,7 +140,7 @@
                     </label>
                     <input
                       id="contactFirstName"
-                      v-model="contactForm.firstName"
+                      v-model="formData.firstName"
                       type="text"
                       required
                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
@@ -160,7 +153,7 @@
                     </label>
                     <input
                       id="contactLastName"
-                      v-model="contactForm.lastName"
+                      v-model="formData.lastName"
                       type="text"
                       required
                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
@@ -174,7 +167,7 @@
                   </label>
                   <input
                     id="contactEmail"
-                    v-model="contactForm.email"
+                    v-model="formData.email"
                     type="email"
                     required
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
@@ -187,7 +180,7 @@
                   </label>
                   <input
                     id="contactPhone"
-                    v-model="contactForm.phone"
+                    v-model="formData.phone"
                     type="tel"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
                   />
@@ -199,17 +192,17 @@
                   </label>
                   <select
                     id="contactSubject"
-                    v-model="contactForm.subject"
+                    v-model="formData.subject"
                     required
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
                   >
-                    <option value="">Select Subject</option>
-                    <option value="capabilities">Capabilities Inquiry</option>
-                    <option value="partnership">Partnership Opportunities</option>
-                    <option value="careers">Career Opportunities</option>
-                    <option value="facility">Facility Visit Request</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
+                    <option
+                      v-for="subject in contactForm?.subjects"
+                      :key="subject.value"
+                      :value="subject.value"
+                    >
+                      {{ subject.label }}
+                    </option>
                   </select>
                 </div>
 
@@ -219,7 +212,7 @@
                   </label>
                   <textarea
                     id="contactMessage"
-                    v-model="contactForm.message"
+                    v-model="formData.message"
                     required
                     rows="5"
                     placeholder="Please tell us how we can help you..."
@@ -233,7 +226,7 @@
                   class="btn-primary w-full justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Icon v-if="isSubmittingContact" name="mdi:loading" class="w-5 h-5 mr-2 animate-spin" />
-                  {{ isSubmittingContact ? 'Sending...' : 'Send Message' }}
+                  {{ isSubmittingContact ? (contactForm?.submitButton?.submitting || 'Sending...') : (contactForm?.submitButton?.default || 'Send Message') }}
                 </button>
               </form>
             </div>
@@ -246,9 +239,9 @@
     <section class="bg-gray-50 py-16">
       <div class="container-custom">
         <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Visit Our Austin Facility</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ contactMap?.heading }}</h2>
           <p class="text-xl text-gray-600">
-            See our state-of-the-art manufacturing facility in person
+            {{ contactMap?.subheading }}
           </p>
         </div>
         
@@ -256,7 +249,7 @@
           <div class="aspect-w-16 aspect-h-9">
             <!-- Embedded Google Map -->
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.123456789!2d-97.7480567!3d30.2398743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b4c25c234567%3A0x123456789abcdef!2s511%20E%20Saint%20Elmo%20Rd%2C%20Austin%2C%20TX%2078745!5e0!3m2!1sen!2sus!4v1234567890123"
+              :src="contactMap?.mapUrl"
               width="100%"
               height="400"
               style="border:0;"
@@ -269,22 +262,14 @@
           
           <div class="p-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div class="text-center">
-                <Icon name="mdi:map-marker" class="w-8 h-8 text-traxis-red-600 mx-auto mb-2" />
-                <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
-                <p class="text-sm text-gray-600">511 E Saint Elmo Rd, Austin, TX 78745</p>
-              </div>
-              
-              <div class="text-center">
-                <Icon name="mdi:car" class="w-8 h-8 text-traxis-red-600 mx-auto mb-2" />
-                <h3 class="font-semibold text-gray-900 mb-1">Parking</h3>
-                <p class="text-sm text-gray-600">On-site parking available</p>
-              </div>
-              
-              <div class="text-center">
-                <Icon name="mdi:calendar" class="w-8 h-8 text-traxis-red-600 mx-auto mb-2" />
-                <h3 class="font-semibold text-gray-900 mb-1">Visits</h3>
-                <p class="text-sm text-gray-600">By appointment only</p>
+              <div
+                v-for="info in contactMap?.facilityInfo"
+                :key="info.title"
+                class="text-center"
+              >
+                <Icon :name="info.icon" class="w-8 h-8 text-traxis-red-600 mx-auto mb-2" />
+                <h3 class="font-semibold text-gray-900 mb-1">{{ info.title }}</h3>
+                <p class="text-sm text-gray-600">{{ info.description }}</p>
               </div>
             </div>
           </div>
@@ -296,17 +281,16 @@
     <section class="section-padding bg-traxis-red-600 text-white">
       <div class="container-custom">
         <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+          <h2 class="text-3xl font-bold mb-4">{{ contactNewsletter?.heading }}</h2>
           <p class="text-xl text-traxis-grey-100 mb-8">
-            Subscribe to our newsletter for industry insights, company updates, 
-            and precision machining tips.
+            {{ contactNewsletter?.description }}
           </p>
           
           <form @submit.prevent="submitNewsletter" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
               v-model="newsletterEmail"
               type="email"
-              placeholder="Enter your email address"
+              :placeholder="contactNewsletter?.placeholder || 'Enter your email address'"
               required
               class="flex-1 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-600"
             />
@@ -316,12 +300,12 @@
               class="btn-secondary whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Icon v-if="isSubmittingNewsletter" name="mdi:loading" class="w-5 h-5 mr-2 animate-spin" />
-              {{ isSubmittingNewsletter ? 'Subscribing...' : 'Subscribe' }}
+              {{ isSubmittingNewsletter ? (contactNewsletter?.button?.submitting || 'Subscribing...') : (contactNewsletter?.button?.default || 'Subscribe') }}
             </button>
           </form>
           
           <p class="text-sm text-traxis-grey-200 mt-4">
-            We respect your privacy. Unsubscribe at any time.
+            {{ contactNewsletter?.privacy }}
           </p>
         </div>
       </div>
@@ -334,13 +318,13 @@
       <div class="flex min-h-full items-center justify-center p-4">
         <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6">
           <div class="text-center">
-            <Icon name="mdi:check-circle" class="w-16 h-16 text-green-600 mx-auto mb-4" />
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Message Sent Successfully!</h3>
+            <Icon :name="contactModals?.contactSuccess?.icon || 'mdi:check-circle'" class="w-16 h-16 text-green-600 mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ contactModals?.contactSuccess?.title }}</h3>
             <p class="text-gray-600 mb-6">
-              Thank you for contacting us. We'll get back to you within one business day.
+              {{ contactModals?.contactSuccess?.message }}
             </p>
             <button @click="showContactSuccess = false" class="btn-primary">
-              Close
+              {{ contactModals?.contactSuccess?.button || 'Close' }}
             </button>
           </div>
         </div>
@@ -353,13 +337,13 @@
       <div class="flex min-h-full items-center justify-center p-4">
         <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6">
           <div class="text-center">
-            <Icon name="mdi:email-check" class="w-16 h-16 text-green-600 mx-auto mb-4" />
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Successfully Subscribed!</h3>
+            <Icon :name="contactModals?.newsletterSuccess?.icon || 'mdi:email-check'" class="w-16 h-16 text-green-600 mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ contactModals?.newsletterSuccess?.title }}</h3>
             <p class="text-gray-600 mb-6">
-              You've been added to our newsletter. Thank you for your interest in Traxis Manufacturing.
+              {{ contactModals?.newsletterSuccess?.message }}
             </p>
             <button @click="showNewsletterSuccess = false" class="btn-primary">
-              Close
+              {{ contactModals?.newsletterSuccess?.button || 'Close' }}
             </button>
           </div>
         </div>
@@ -370,7 +354,14 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
-// Icon component is auto-imported by @nuxt/icon
+
+// Fetch content from collections using .first() to get single objects
+const { data: contactHeader } = await useAsyncData('contact-header', () => queryCollection('contactHeader').first())
+const { data: contactInfo } = await useAsyncData('contact-info', () => queryCollection('contactInfo').first())
+const { data: contactForm } = await useAsyncData('contact-form', () => queryCollection('contactForm').first())
+const { data: contactMap } = await useAsyncData('contact-map', () => queryCollection('contactMap').first())
+const { data: contactNewsletter } = await useAsyncData('contact-newsletter', () => queryCollection('contactNewsletter').first())
+const { data: contactModals } = await useAsyncData('contact-modals', () => queryCollection('contactModals').first())
 
 const isSubmittingContact = ref(false)
 const isSubmittingNewsletter = ref(false)
@@ -378,7 +369,7 @@ const showContactSuccess = ref(false)
 const showNewsletterSuccess = ref(false)
 const newsletterEmail = ref('')
 
-const contactForm = reactive({
+const formData = reactive({
   firstName: '',
   lastName: '',
   email: '',
@@ -394,7 +385,7 @@ const submitContactForm = async () => {
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1500))
     
-    console.log('Contact form data:', contactForm)
+    console.log('Contact form data:', formData)
     
     showContactSuccess.value = true
     resetContactForm()
@@ -426,8 +417,8 @@ const submitNewsletter = async () => {
 }
 
 const resetContactForm = () => {
-  Object.keys(contactForm).forEach(key => {
-    contactForm[key] = ''
+  Object.keys(formData).forEach(key => {
+    formData[key] = ''
   })
 }
 

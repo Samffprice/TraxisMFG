@@ -1,0 +1,54 @@
+heading: "Get in Touch"
+phone:
+  icon: "mdi:phone"
+  color: "bg-traxis-red-600"
+  title: "Phone"
+  local:
+    label: "Local:"
+    number: "(512) 383-0089"
+    link: "tel:+15123830089"
+  tollFree:
+    label: "Toll-Free:"
+    number: "1 (888) 982-0898"
+    link: "tel:+18889820898"
+email:
+  icon: "mdi:email"
+  color: "bg-traxis-grey-700"
+  title: "Email"
+  sales:
+    label: "Sales & Quotes:"
+    address: "sales@traxismfg.com"
+    link: "mailto:sales@traxismfg.com"
+  general:
+    label: "General:"
+    address: "info@traxismfg.com"
+    link: "mailto:info@traxismfg.com"
+address:
+  icon: "mdi:map-marker"
+  color: "bg-traxis-red-600"
+  title: "Address"
+  company: "Traxis Manufacturing LLC"
+  street: "511 East Saint Elmo Road"
+  city: "Austin, TX 78745"
+  country: "United States"
+hours:
+  icon: "mdi:clock-outline"
+  color: "bg-traxis-grey-700"
+  title: "Business Hours"
+  weekdays: "Monday - Friday: 8:00 AM - 4:30 PM"
+  saturday: "Saturday: By Appointment"
+  sunday: "Sunday: Closed"
+  timezone: "(Central Standard Time)"
+social:
+  title: "Connect With Us"
+  links:
+    - platform: "LinkedIn"
+      url: "https://linkedin.com/company/traxis-manufacturing"
+      icon: "mdi:linkedin"
+      color: "bg-traxis-red-600 hover:bg-traxis-red-700"
+      label: "LinkedIn"
+    - platform: "Email"
+      url: "mailto:sales@traxismfg.com"
+      icon: "mdi:email"
+      color: "bg-orange-600 hover:bg-orange-700"
+      label: "Email"

@@ -1,0 +1,22 @@
+title: "Supporting Equipment & Tooling"
+icon: "mdi:tools"
+color: "bg-purple-600"
+categories:
+  - name: "Workholding"
+    items:
+      - "Kurt vises and fixtures"
+      - "5th axis workholding"
+      - "Custom fixture design"
+      - "Precision chucks and collets"
+  - name: "Cutting Tools"
+    items:
+      - "Carbide end mills"
+      - "High-speed steel tools"
+      - "Specialized tooling"
+      - "Tool presetting equipment"
+  - name: "Material Handling"
+    items:
+      - "Overhead crane (2-ton)"
+      - "Forklift capability"
+      - "Material storage systems"
+      - "Parts washing station"

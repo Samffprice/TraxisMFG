@@ -1,0 +1,12 @@
+title: "Materials We Machine"
+description: "Expertise across a comprehensive range of metals, alloys, and engineering plastics for diverse industrial applications and demanding performance requirements."
+breadcrumbs:
+  - text: "Home"
+    link: "/"
+  - text: "Capabilities"
+    link: "/capabilities"
+  - text: "Materials"
+    link: "/capabilities/materials"
+primaryButton:
+  text: "Get Material Quote"
+  link: "/request-quote"

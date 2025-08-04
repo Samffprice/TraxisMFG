@@ -1,0 +1,13 @@
+heading: "Visit Our Austin Facility"
+subheading: "See our state-of-the-art manufacturing facility in person"
+mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.123456789!2d-97.7480567!3d30.2398743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b4c25c234567%3A0x123456789abcdef!2s511%20E%20Saint%20Elmo%20Rd%2C%20Austin%2C%20TX%2078745!5e0!3m2!1sen!2sus!4v1234567890123"
+facilityInfo:
+  - icon: "mdi:map-marker"
+    title: "Address"
+    description: "511 E Saint Elmo Rd, Austin, TX 78745"
+  - icon: "mdi:car"
+    title: "Parking"
+    description: "On-site parking available"
+  - icon: "mdi:calendar"
+    title: "Visits"
+    description: "By appointment only"

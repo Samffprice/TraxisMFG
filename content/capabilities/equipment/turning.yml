@@ -1,0 +1,77 @@
+title: "CNC Turning Centers"
+icon: "mdi:rotate-3d-variant"
+color: "bg-orange-600"
+machines:
+  - name: "Doosan PUMA 2600SY"
+    specs:
+      - label: "Type"
+        value: "CNC Lathe with Live Tooling"
+        icon: "mdi:settings"
+        hasIcon: true
+      - label: "Swing"
+        value: "18.1\" over bed, 11.8\" over cross slide"
+        icon: "mdi:diameter-variant"
+        hasIcon: true
+      - label: "Length"
+        value: "20.9\" between centers"
+        icon: "mdi:arrow-expand-horizontal"
+        hasIcon: true
+      - label: "Spindle"
+        value: "4,000 RPM main, 5,000 RPM live tooling"
+        icon: "mdi:speedometer"
+        hasIcon: true
+      - label: "Features"
+        value: "Y-axis capability, sub-spindle, bar feeder ready"
+        icon: "mdi:star"
+        hasIcon: true
+  - name: "Mazak QT Nexus 250-II MSY"
+    specs:
+      - label: "Type"
+        value: "Multi-Tasking Turning Center"
+        hasIcon: false
+      - label: "Swing"
+        value: "10\" over bed, 7.9\" over cross slide"
+        hasIcon: false
+      - label: "Length"
+        value: "15.7\" between centers"
+        hasIcon: false
+      - label: "Spindle"
+        value: "5,000 RPM main, 6,000 RPM live tooling"
+        hasIcon: false
+      - label: "Features"
+        value: "Y-axis milling, sub-spindle, done-in-one capability"
+        hasIcon: false
+  - name: "Citizen K16E Swiss Lathe"
+    specs:
+      - label: "Type"
+        value: "Swiss-Style CNC Lathe"
+        hasIcon: false
+      - label: "Capacity"
+        value: "0.625\" bar diameter"
+        hasIcon: false
+      - label: "Length"
+        value: "5.9\" machining length"
+        hasIcon: false
+      - label: "Spindle"
+        value: "10,000 RPM main spindle"
+        hasIcon: false
+      - label: "Features"
+        value: "Guide bushing, back working, cross drilling"
+        hasIcon: false
+  - name: "Haas ST-20Y"
+    specs:
+      - label: "Type"
+        value: "CNC Lathe with Live Tooling"
+        hasIcon: false
+      - label: "Swing"
+        value: "17.5\" over bed, 11.8\" over cross slide"
+        hasIcon: false
+      - label: "Length"
+        value: "20.5\" between centers"
+        hasIcon: false
+      - label: "Spindle"
+        value: "3,500 RPM main, 4,000 RPM live tooling"
+        hasIcon: false
+      - label: "Features"
+        value: "Y-axis capability, 12-station BMT turret"
+        hasIcon: false

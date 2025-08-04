@@ -1,0 +1,15 @@
+title: "Precision CNC Turning Services"
+description: "Advanced turning capabilities for round components, shafts, and cylindrical parts with live tooling for complete machining solutions in a single setup."
+breadcrumbs:
+  - text: "Home"
+    link: "/"
+  - text: "Capabilities"
+    link: "/capabilities"
+  - text: "CNC Turning"
+    link: "/capabilities/cnc-turning"
+primaryButton:
+  text: "Get Turning Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "See Turning Equipment"
+  link: "/capabilities/equipment"

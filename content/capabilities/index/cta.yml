@@ -1,0 +1,8 @@
+heading: "Ready to Discuss Your Project?"
+description: "Contact us to learn how our precision machining capabilities can bring your designs to life."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "Start Project"
+  link: "/contact"

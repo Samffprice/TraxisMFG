@@ -1,0 +1,27 @@
+heading: "Material Selection Guidance"
+subheading: "Let our experts help you choose the right material for your application"
+guides:
+  - title: "Temperature Requirements"
+    icon: "mdi:thermometer"
+    recommendations:
+      - "Room temperature: Aluminum, Steel, Plastics"
+      - "Elevated temperature: Stainless Steel, Inconel"
+      - "High temperature: Titanium, PEEK"
+      - "Cryogenic: Aluminum 6061, Stainless 316"
+  - title: "Strength-to-Weight"
+    icon: "mdi:weight"
+    recommendations:
+      - "Lightweight: Aluminum 7075, Titanium"
+      - "High strength: Tool steels, 17-4 PH"
+      - "Fatigue resistance: 7075, 2024 aluminum"
+      - "Impact resistance: Steel alloys"
+  - title: "Corrosion Resistance"
+    icon: "mdi:shield-check"
+    recommendations:
+      - "Marine: 5083 aluminum, 316 stainless"
+      - "Chemical: PEEK, 316L stainless"
+      - "General: 6061 aluminum, 304 stainless"
+      - "Galvanic compatibility considerations"
+button:
+  text: "Get Material Consultation"
+  link: "/contact"

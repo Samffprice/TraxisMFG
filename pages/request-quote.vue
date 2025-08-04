@@ -5,11 +5,10 @@
       <div class="container-custom">
         <div class="max-w-4xl">
           <h1 class="text-4xl md:text-5xl font-bold mb-6">
-            Request a Quote
+            {{ quoteHeader?.title }}
           </h1>
           <p class="text-xl md:text-2xl text-traxis-grey-100 mb-8">
-            Get a detailed quote for your precision machining project. Our team will review 
-            your requirements and provide transparent pricing with realistic timelines.
+            {{ quoteHeader?.description }}
           </p>
         </div>
       </div>
@@ -21,53 +20,34 @@
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              How to Get Your Quote
+              {{ quoteIntro?.heading }}
             </h2>
             <p class="text-xl text-gray-600 mb-8">
-              To provide the most accurate quote, we'll need some information about your project. 
-              All information you provide is strictly confidential and protected under 
-              non-disclosure agreements.
+              {{ quoteIntro?.description }}
             </p>
           </div>
 
           <!-- Information Needed -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div class="text-center p-6 bg-traxis-grey-50 rounded-lg">
-              <Icon name="mdi:file-cad" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
-              <h3 class="font-semibold text-gray-900 mb-2">Design Files</h3>
-              <p class="text-sm text-gray-600">CAD files, drawings, or sketches of your part</p>
-            </div>
-            
-            <div class="text-center p-6 bg-traxis-grey-50 rounded-lg">
-              <Icon name="mdi:material-ui" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
-              <h3 class="font-semibold text-gray-900 mb-2">Material</h3>
-              <p class="text-sm text-gray-600">Preferred material or performance requirements</p>
-            </div>
-            
-            <div class="text-center p-6 bg-traxis-grey-50 rounded-lg">
-              <Icon name="mdi:counter" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
-              <h3 class="font-semibold text-gray-900 mb-2">Quantity</h3>
-              <p class="text-sm text-gray-600">How many parts do you need?</p>
-            </div>
-            
-            <div class="text-center p-6 bg-traxis-grey-50 rounded-lg">
-              <Icon name="mdi:calendar-clock" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
-              <h3 class="font-semibold text-gray-900 mb-2">Timeline</h3>
-              <p class="text-sm text-gray-600">When do you need the parts delivered?</p>
+            <div
+              v-for="info in quoteIntro?.infoNeeded"
+              :key="info.title"
+              class="text-center p-6 bg-traxis-grey-50 rounded-lg"
+            >
+              <Icon :name="info.icon" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
+              <h3 class="font-semibold text-gray-900 mb-2">{{ info.title }}</h3>
+              <p class="text-sm text-gray-600">{{ info.description }}</p>
             </div>
           </div>
 
           <!-- Confidentiality Assurance -->
           <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-12">
             <div class="flex items-start">
-              <Icon name="mdi:shield-lock" class="w-6 h-6 text-green-600 mr-3 mt-1" />
+              <Icon :name="quoteIntro?.confidentiality?.icon" class="w-6 h-6 text-green-600 mr-3 mt-1" />
               <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-2">Your Information is Protected</h3>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ quoteIntro?.confidentiality?.title }}</h3>
                 <p class="text-gray-700">
-                  All design files and project information are treated with strict confidentiality. 
-                  We can provide non-disclosure agreements upon request, and all proprietary 
-                  information is secured and only accessible to authorized personnel involved 
-                  in your project.
+                  {{ quoteIntro?.confidentiality?.description }}
                 </p>
               </div>
             </div>
@@ -81,7 +61,7 @@
       <div class="container-custom">
         <div class="max-w-3xl mx-auto">
           <form @submit.prevent="submitForm" class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6">Project Information</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ quoteForm?.title }}</h3>
             
             <!-- Contact Information -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -172,32 +152,18 @@
                 Type of Inquiry *
               </label>
               <div class="space-y-2">
-                <label class="flex items-center">
+                <label
+                  v-for="inquiryType in quoteForm?.inquiryTypes"
+                  :key="inquiryType.value"
+                  class="flex items-center"
+                >
                   <input
                     v-model="form.inquiryType"
                     type="radio"
-                    value="quote"
+                    :value="inquiryType.value"
                     class="text-traxis-red-600 focus:ring-traxis-red-600"
                   />
-                  <span class="ml-2">Request a Quote for Machining Services</span>
-                </label>
-                <label class="flex items-center">
-                  <input
-                    v-model="form.inquiryType"
-                    type="radio"
-                    value="capabilities"
-                    class="text-traxis-red-600 focus:ring-traxis-red-600"
-                  />
-                  <span class="ml-2">General Capabilities Inquiry</span>
-                </label>
-                <label class="flex items-center">
-                  <input
-                    v-model="form.inquiryType"
-                    type="radio"
-                    value="other"
-                    class="text-traxis-red-600 focus:ring-traxis-red-600"
-                  />
-                  <span class="ml-2">Other</span>
+                  <span class="ml-2">{{ inquiryType.label }}</span>
                 </label>
               </div>
             </div>
@@ -222,7 +188,7 @@
               <!-- File Upload -->
               <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">
-                  Design Files
+                  {{ quoteForm?.fileUpload?.title }}
                 </label>
                 <div 
                   @drop="handleDrop"
@@ -232,13 +198,13 @@
                 >
                   <Icon name="mdi:cloud-upload" class="w-12 h-12 text-gray-400 mx-auto mb-4" />
                   <p class="text-gray-600 mb-2">
-                    Drag and drop files here, or 
+                    {{ quoteForm?.fileUpload?.description }} 
                     <button type="button" @click="$refs.fileInput.click()" class="text-traxis-red-600 hover:text-traxis-red-700">
-                      browse
+                      {{ quoteForm?.fileUpload?.browseText }}
                     </button>
                   </p>
                   <p class="text-xs text-gray-500">
-                    Supported formats: STEP, IGES, SolidWorks, AutoCAD, PDF (Max 25MB per file)
+                    {{ quoteForm?.fileUpload?.supportedFormats }}
                   </p>
                   <input
                     ref="fileInput"
@@ -287,30 +253,26 @@
                     v-model="form.material"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
                   >
-                    <option value="">Select Material</option>
-                    <optgroup label="Aluminum Alloys">
-                      <option value="6061-T6">Aluminum 6061-T6</option>
-                      <option value="7075-T6">Aluminum 7075-T6</option>
-                      <option value="2024-T3">Aluminum 2024-T3</option>
-                    </optgroup>
-                    <optgroup label="Stainless Steel">
-                      <option value="303">Stainless Steel 303</option>
-                      <option value="304">Stainless Steel 304</option>
-                      <option value="316">Stainless Steel 316</option>
-                      <option value="17-4 PH">Stainless Steel 17-4 PH</option>
-                    </optgroup>
-                    <optgroup label="Engineering Plastics">
-                      <option value="Delrin">Delrin (POM)</option>
-                      <option value="PEEK">PEEK</option>
-                      <option value="Ultem">Ultem (PEI)</option>
-                      <option value="Nylon">Nylon</option>
-                    </optgroup>
-                    <optgroup label="Specialty Alloys">
-                      <option value="Titanium">Titanium Ti-6Al-4V</option>
-                      <option value="Inconel">Inconel 718</option>
-                      <option value="Brass">Brass C360</option>
-                    </optgroup>
-                    <option value="Other">Other (specify in description)</option>
+                    <template v-for="materialGroup in quoteForm?.materials" :key="materialGroup.group">
+                      <optgroup v-if="materialGroup.group !== 'Select Material' && materialGroup.group !== 'Other'" :label="materialGroup.group">
+                        <option
+                          v-for="option in materialGroup.options"
+                          :key="option.value"
+                          :value="option.value"
+                        >
+                          {{ option.label }}
+                        </option>
+                      </optgroup>
+                      <template v-else>
+                        <option
+                          v-for="option in materialGroup.options"
+                          :key="option.value"
+                          :value="option.value"
+                        >
+                          {{ option.label }}
+                        </option>
+                      </template>
+                    </template>
                   </select>
                 </div>
 
@@ -323,14 +285,13 @@
                     v-model="form.quantity"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
                   >
-                    <option value="">Select Quantity</option>
-                    <option value="1">1 piece (Prototype)</option>
-                    <option value="2-5">2-5 pieces</option>
-                    <option value="6-25">6-25 pieces</option>
-                    <option value="26-100">26-100 pieces</option>
-                    <option value="101-500">101-500 pieces</option>
-                    <option value="500+">500+ pieces</option>
-                    <option value="TBD">To be determined</option>
+                    <option
+                      v-for="quantity in quoteForm?.quantities"
+                      :key="quantity.value"
+                      :value="quantity.value"
+                    >
+                      {{ quantity.label }}
+                    </option>
                   </select>
                 </div>
               </div>
@@ -345,13 +306,13 @@
                     v-model="form.timeline"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
                   >
-                    <option value="">Select Timeline</option>
-                    <option value="ASAP">ASAP (Rush service)</option>
-                    <option value="2-4 weeks">2-4 weeks</option>
-                    <option value="4-6 weeks">4-6 weeks (Standard)</option>
-                    <option value="6-8 weeks">6-8 weeks</option>
-                    <option value="8+ weeks">8+ weeks</option>
-                    <option value="Flexible">Flexible</option>
+                    <option
+                      v-for="timeline in quoteForm?.timelines"
+                      :key="timeline.value"
+                      :value="timeline.value"
+                    >
+                      {{ timeline.label }}
+                    </option>
                   </select>
                 </div>
 
@@ -364,13 +325,13 @@
                     v-model="form.application"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-traxis-red-600"
                   >
-                    <option value="">Select Application</option>
-                    <option value="Aerospace">Aerospace</option>
-                    <option value="Medical Devices">Medical Devices</option>
-                    <option value="Industrial Automation">Industrial Automation</option>
-                    <option value="Semiconductor">Semiconductor Equipment</option>
-                    <option value="Commercial">Commercial/General</option>
-                    <option value="Other">Other</option>
+                    <option
+                      v-for="application in quoteForm?.applications"
+                      :key="application.value"
+                      :value="application.value"
+                    >
+                      {{ application.label }}
+                    </option>
                   </select>
                 </div>
               </div>
@@ -385,7 +346,7 @@
                   class="mt-1 text-traxis-red-600 focus:ring-traxis-red-600"
                 />
                 <span class="ml-2 text-sm text-gray-700">
-                  I would like to request a Non-Disclosure Agreement (NDA) before sharing detailed project information
+                  {{ quoteForm?.ndaText }}
                 </span>
               </label>
             </div>
@@ -398,7 +359,7 @@
                 class="btn-primary text-lg px-8 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Icon v-if="isSubmitting" name="mdi:loading" class="w-5 h-5 mr-2 animate-spin" />
-                {{ isSubmitting ? 'Submitting...' : 'Submit Request' }}
+                {{ isSubmitting ? (quoteForm?.buttons?.submit?.submitting || 'Submitting...') : (quoteForm?.buttons?.submit?.default || 'Submit Request') }}
               </button>
               
               <button
@@ -406,7 +367,7 @@
                 @click="resetForm"
                 class="btn-outline text-lg px-8 py-3"
               >
-                Clear Form
+                {{ quoteForm?.buttons?.clear || 'Clear Form' }}
               </button>
             </div>
           </form>
@@ -419,30 +380,30 @@
       <div class="container-custom">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-bold text-gray-900 mb-6">
-            Prefer to Talk Directly?
+            {{ quoteContact?.heading }}
           </h2>
           <p class="text-xl text-gray-600 mb-8">
-            Our team is ready to discuss your project requirements and answer any questions.
+            {{ quoteContact?.description }}
           </p>
           
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-traxis-grey-50 rounded-lg p-8">
-              <Icon name="mdi:phone" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Call Us</h3>
+            <div :class="`${quoteContact?.phone?.color} rounded-lg p-8`">
+              <Icon :name="quoteContact?.phone?.icon" class="w-12 h-12 text-traxis-red-600 mx-auto mb-4" />
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">{{ quoteContact?.phone?.title }}</h3>
               <div class="space-y-2">
-                <p class="text-lg font-medium text-gray-900">Local: (512) 383-0089</p>
-                <p class="text-lg font-medium text-gray-900">Toll-Free: 1 (888) 982-0898</p>
-                <p class="text-sm text-gray-600">Monday - Friday: 8:00 AM - 4:30 PM CST</p>
+                <p class="text-lg font-medium text-gray-900">{{ quoteContact?.phone?.local }}</p>
+                <p class="text-lg font-medium text-gray-900">{{ quoteContact?.phone?.tollFree }}</p>
+                <p class="text-sm text-gray-600">{{ quoteContact?.phone?.hours }}</p>
               </div>
             </div>
             
-            <div class="bg-orange-50 rounded-lg p-8">
-              <Icon name="mdi:email" class="w-12 h-12 text-orange-600 mx-auto mb-4" />
-              <h3 class="text-xl font-semibold text-gray-900 mb-4">Email Us</h3>
+            <div :class="`${quoteContact?.email?.color} rounded-lg p-8`">
+              <Icon :name="quoteContact?.email?.icon" class="w-12 h-12 text-orange-600 mx-auto mb-4" />
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">{{ quoteContact?.email?.title }}</h3>
               <div class="space-y-2">
-                <p class="text-lg font-medium text-gray-900">sales@traxismfg.com</p>
+                <p class="text-lg font-medium text-gray-900">{{ quoteContact?.email?.address }}</p>
                 <p class="text-sm text-gray-600">
-                  We typically respond to emails within 4 business hours
+                  {{ quoteContact?.email?.responseTime }}
                 </p>
               </div>
             </div>
@@ -457,14 +418,13 @@
       <div class="flex min-h-full items-center justify-center p-4">
         <div class="relative bg-white rounded-lg shadow-xl max-w-md w-full p-6">
           <div class="text-center">
-            <Icon name="mdi:check-circle" class="w-16 h-16 text-green-600 mx-auto mb-4" />
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Request Submitted Successfully!</h3>
+            <Icon :name="quoteModal?.icon || 'mdi:check-circle'" class="w-16 h-16 text-green-600 mx-auto mb-4" />
+            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ quoteModal?.title }}</h3>
             <p class="text-gray-600 mb-6">
-              Thank you for your request. Our team will review your project requirements and 
-              contact you within one business day to discuss the next steps.
+              {{ quoteModal?.message }}
             </p>
             <button @click="showSuccessModal = false" class="btn-primary">
-              Close
+              {{ quoteModal?.button || 'Close' }}
             </button>
           </div>
         </div>
@@ -475,7 +435,13 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
-// Icon component is auto-imported by @nuxt/icon
+
+// Fetch content from collections using .first() to get single objects
+const { data: quoteHeader } = await useAsyncData('quote-header', () => queryCollection('quoteHeader').first())
+const { data: quoteIntro } = await useAsyncData('quote-intro', () => queryCollection('quoteIntro').first())
+const { data: quoteForm } = await useAsyncData('quote-form', () => queryCollection('quoteForm').first())
+const { data: quoteContact } = await useAsyncData('quote-contact', () => queryCollection('quoteContact').first())
+const { data: quoteModal } = await useAsyncData('quote-modal', () => queryCollection('quoteModal').first())
 
 const isSubmitting = ref(false)
 const showSuccessModal = ref(false)

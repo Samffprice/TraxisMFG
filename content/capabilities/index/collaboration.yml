@@ -1,0 +1,18 @@
+heading: "Design for Manufacturability (DFM) Collaboration"
+description: "We don't just manufacture your parts – we partner with you to optimize your designs. Our experienced machinists provide valuable DFM feedback to improve part quality, reduce costs, and simplify production without compromising functionality."
+features:
+  - title: "Design Optimization"
+    description: "Improve part design for better manufacturability and cost-effectiveness"
+    icon: "mdi:lightbulb"
+  - title: "Tolerance Analysis"
+    description: "Ensure realistic tolerances that maintain function while optimizing cost"
+    icon: "mdi:target"
+  - title: "Process Optimization"
+    description: "Reduce setup time and improve efficiency through smart design choices"
+    icon: "mdi:speedometer"
+image:
+  src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&crop=center"
+  alt: "Design collaboration and DFM process"
+button:
+  text: "Learn About Our Process"
+  link: "/process"

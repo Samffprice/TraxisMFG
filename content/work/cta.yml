@@ -1,0 +1,8 @@
+heading: "Ready to Add Your Project to Our Portfolio?"
+description: "Let's discuss how we can bring your precision machining project to life with the same quality and attention to detail shown in our portfolio."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "View Our Capabilities"
+  link: "/capabilities"
