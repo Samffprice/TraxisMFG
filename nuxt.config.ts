@@ -7,7 +7,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxt/content'
   ],
 
   // Tailwind CSS configuration
@@ -21,6 +22,19 @@ export default defineNuxtConfig({
     families: {
       Inter: [400, 500, 600, 700],
       'Work Sans': [400, 500, 600, 700]
+    }
+  },
+
+  // Content configuration
+  content: {
+    highlight: {
+      theme: 'github-light'
+    },
+    markdown: {
+      toc: {
+        depth: 3,
+        searchDepth: 3
+      }
     }
   },
 
