@@ -112,7 +112,12 @@ export default defineNuxtConfig({
   },
 
   // CSS configuration handled by Tailwind CSS module
-
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    }
+  },
+  
   // Runtime config
   runtimeConfig: {
     public: {
