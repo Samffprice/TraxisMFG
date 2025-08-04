@@ -27,14 +27,8 @@ export default defineNuxtConfig({
 
   // Content configuration
   content: {
-    highlight: {
-      theme: 'github-light'
-    },
-    markdown: {
-      toc: {
-        depth: 3,
-        searchDepth: 3
-      }
+    preview: {
+      api: 'https://api.nuxt.studio'
     }
   },
 

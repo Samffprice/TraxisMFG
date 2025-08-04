@@ -1,23 +1,33 @@
 <template>
-  <div class="container mx-auto px-6 py-8">
-    <!-- Example of using content from markdown files in v3 -->
-    <ContentRenderer v-if="page" :value="page" />
-    <div v-else>
-      <p>Content not found</p>
+  <div>
+    <!-- Now using your beautiful existing design with content from markdown -->
+    <ContentLayout v-if="page" :content="page" />
+    <div v-else class="container-custom section-padding text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Content not found</h1>
+      <p class="text-gray-600">The requested content could not be loaded.</p>
     </div>
   </div>
 </template>
 
 <script setup>
-// This is an example page showing how to use Nuxt Content v3
-// In v3, we need to query content explicitly and use ContentRenderer
+// This example shows how to use your beautiful existing design with Nuxt Content v3
+// The ContentLayout component applies all your styling, components, and design system
 
 const { data: page } = await useAsyncData('about-content', () => {
   return queryCollection('content').path('/about').first()
 })
 
-useSEO({
-  title: 'Content Example - Traxis Manufacturing',
-  description: 'Example of how to use Nuxt Content for easy content management'
-})
+// Dynamic SEO based on content
+if (page.value) {
+  useSEO({
+    title: `${page.value.title} - Traxis Manufacturing`,
+    description: page.value.description || 'Traxis Manufacturing - Precision CNC machining services',
+    image: page.value.image || '/about-us.webp'
+  })
+} else {
+  useSEO({
+    title: 'Content Example - Traxis Manufacturing',
+    description: 'Example of how to use Nuxt Content for easy content management'
+  })
+}
 </script>
