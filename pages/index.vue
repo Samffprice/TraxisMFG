@@ -1,31 +1,23 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <HeroSection />
+    <HeroSection :hero="hero" />
     
     <!-- Trust Elements / Client Industries -->
     <section class="bg-gray-50 py-12">
       <div class="container-custom">
         <div class="text-center mb-8">
           <p class="text-gray-600 text-sm uppercase tracking-wide font-semibold mb-4">
-            Trusted by Leading Companies in
+            {{ industries.heading }}
           </p>
           <div class="flex flex-wrap justify-center items-center gap-8 text-gray-500">
-            <div class="flex items-center space-x-2">
-              <Icon name="mdi:airplane" class="w-6 h-6" />
-              <span class="font-medium">Aerospace</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <Icon name="mdi:heart-pulse" class="w-6 h-6" />
-              <span class="font-medium">Medical Devices</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <Icon name="mdi:cog" class="w-6 h-6" />
-              <span class="font-medium">Industrial Automation</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <Icon name="mdi:chip" class="w-6 h-6" />
-              <span class="font-medium">Semiconductor</span>
+            <div 
+              v-for="industry in industries.industries" 
+              :key="industry.name"
+              class="flex items-center space-x-2"
+            >
+              <Icon :name="industry.icon" class="w-6 h-6" />
+              <span class="font-medium">{{ industry.name }}</span>
             </div>
           </div>
         </div>
@@ -37,16 +29,16 @@
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {{ servicesData?.title || 'Why Choose Traxis Manufacturing?' }}
+            {{ services.heading }}
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            {{ servicesData?.description || 'We combine state-of-the-art precision technology with accessible, expert-driven human partnership to deliver exceptional results.' }}
+            {{ services.subheading }}
           </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ServiceCard
-            v-for="service in servicesData?.services || []"
+            v-for="service in services.services"
             :key="service.title"
             :icon="service.icon"
             :title="service.title"
@@ -63,44 +55,22 @@
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-traxis-grey-900 mb-4">
-            The Traxis Advantage
+            {{ advantages.heading }}
           </h2>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Austin-Based Service -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-traxis-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="mdi:map-marker" class="w-8 h-8 text-white" />
+          <div 
+            v-for="advantage in advantages.advantages" 
+            :key="advantage.title"
+            class="text-center"
+          >
+            <div :class="`w-16 h-16 ${advantage.bgColor} rounded-full flex items-center justify-center mx-auto mb-4`">
+              <Icon :name="advantage.icon" class="w-8 h-8 text-white" />
             </div>
-            <h3 class="text-xl font-semibold text-traxis-grey-900 mb-3">Austin-Based Partnership</h3>
+            <h3 class="text-xl font-semibold text-traxis-grey-900 mb-3">{{ advantage.title }}</h3>
             <p class="text-traxis-grey-600">
-              Genuine local presence at 511 East Saint Elmo Road. Experience the benefits of 
-              face-to-face collaboration and quick response times.
-            </p>
-          </div>
-          
-          <!-- Expert Machinists -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-traxis-grey-700 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="mdi:account-hard-hat" class="w-8 h-8 text-white" />
-            </div>
-            <h3 class="text-xl font-semibold text-traxis-grey-900 mb-3">Dedicated Expert Machinists</h3>
-            <p class="text-traxis-grey-600">
-Our experienced team brings decades of precision machining expertise to every project, 
-              ensuring exceptional quality and attention to detail.
-            </p>
-          </div>
-          
-          <!-- Quality Commitment -->
-          <div class="text-center">
-            <div class="w-16 h-16 bg-traxis-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Icon name="mdi:shield-check" class="w-8 h-8 text-white" />
-            </div>
-            <h3 class="text-xl font-semibold text-traxis-grey-900 mb-3">Quality & Precision Focus</h3>
-            <p class="text-traxis-grey-600">
-Specializing in high-stakes industries where failure is not an option. 
-              Complex geometries and tight tolerances are our specialty.
+              {{ advantage.description }}
             </p>
           </div>
         </div>
@@ -112,17 +82,17 @@ Specializing in high-stakes industries where failure is not an option.
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Clients Say
+            {{ testimonials.heading }}
           </h2>
           <p class="text-xl text-gray-600">
-            {{ testimonialsData?.description || 'Real feedback from our valued customers' }}
+            {{ testimonials.subheading }}
           </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div 
-            v-for="testimonial in testimonialsData?.testimonials || []"
-            :key="testimonial.name"
+            v-for="testimonial in testimonials.testimonials" 
+            :key="testimonial.author"
             class="bg-white rounded-lg shadow-md p-6 border-l-4 border-traxis-red-600"
           >
             <div class="flex items-start space-x-1 mb-4">
@@ -137,10 +107,8 @@ Specializing in high-stakes industries where failure is not an option.
               "{{ testimonial.quote }}"
             </p>
             <div class="text-sm">
-              <p class="font-semibold text-gray-900">{{ testimonial.name }}</p>
-              <p class="text-gray-500">
-                {{ testimonial.company }}{{ testimonial.company && testimonial.timeAgo ? ' • ' : '' }}{{ testimonial.timeAgo }}
-              </p>
+              <p class="font-semibold text-gray-900">{{ testimonial.author }}</p>
+              <p class="text-gray-500">{{ testimonial.role }} • {{ testimonial.timeAgo }}</p>
             </div>
           </div>
         </div>
@@ -152,10 +120,10 @@ Specializing in high-stakes industries where failure is not an option.
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Featured Project Spotlight
+            {{ featuredProject.heading }}
           </h2>
           <p class="text-xl text-gray-600">
-See how we solve complex manufacturing challenges
+            {{ featuredProject.subheading }}
           </p>
         </div>
         
@@ -163,33 +131,34 @@ See how we solve complex manufacturing challenges
           <div class="md:flex">
             <div class="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&crop=center" 
-                alt="High-Tolerance Aerospace Component" 
+                :src="featuredProject.project.image" 
+                :alt="featuredProject.project.imageAlt" 
                 class="w-full h-64 md:h-full object-cover"
               />
             </div>
             <div class="md:w-1/2 p-8">
               <div class="mb-4">
                 <span class="bg-traxis-red-100 text-traxis-red-800 text-xs font-semibold px-3 py-1 rounded-full">
-                  Aerospace
+                  {{ featuredProject.project.category }}
                 </span>
               </div>
               <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                High-Tolerance Manifold for Aerospace Application
+                {{ featuredProject.project.title }}
               </h3>
               <p class="text-gray-600 mb-6">
-Complex aluminum manifold featuring multiple intersecting bores with 
-                positional tolerances of ±0.001". Our 5-axis machining approach 
-                eliminated tolerance stacking and achieved 99.8% acceptance rate.
+                {{ featuredProject.project.description }}
               </p>
               <div class="space-y-2 text-sm text-gray-600 mb-6">
-                <p><strong>Material:</strong> Aluminum 6061-T6</p>
-                <p><strong>Tolerance:</strong> ±0.001" positional</p>
-                <p><strong>Process:</strong> 5-Axis CNC Milling</p>
-                <p><strong>Industry Standard:</strong> <a href="https://www.asme.org/" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">ASME Y14.5</a> GD&T</p>
+                <p v-for="spec in featuredProject.project.specs" :key="spec.label">
+                  <strong>{{ spec.label }}:</strong> 
+                  <span v-if="spec.label === 'Industry Standard'">
+                    <a href="https://www.asme.org/" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">{{ spec.value }}</a>
+                  </span>
+                  <span v-else>{{ spec.value }}</span>
+                </p>
               </div>
-              <NuxtLink to="/work" class="btn-outline">
-                See Our Portfolio
+              <NuxtLink :to="featuredProject.project.buttonLink" class="btn-outline">
+                {{ featuredProject.project.buttonText }}
               </NuxtLink>
             </div>
           </div>
@@ -202,16 +171,16 @@ Complex aluminum manifold featuring multiple intersecting bores with
       <div class="container-custom">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
+            {{ faqsContent.heading }}
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get answers to common questions about our precision machining services and processes
+            {{ faqsContent.subheading }}
           </p>
         </div>
         
         <div class="max-w-4xl mx-auto space-y-4">
           <div 
-            v-for="(faq, index) in faqsData?.faqs || []" 
+            v-for="(faq, index) in faqsContent.faqs" 
             :key="index"
             class="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden"
           >
@@ -242,19 +211,21 @@ Complex aluminum manifold featuring multiple intersecting bores with
         <div class="bg-white rounded-lg border-l-4 border-traxis-red-600 p-6 shadow-sm">
           <div class="flex items-start">
             <div class="flex-shrink-0">
-              <Icon name="mdi:information" class="w-6 h-6 text-traxis-red-600" />
+              <Icon :name="industryNotice.icon" class="w-6 h-6 text-traxis-red-600" />
             </div>
             <div class="ml-3">
               <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                Please Note: Our Specialization
+                {{ industryNotice.title }}
               </h3>
               <p class="text-gray-600">
-                To ensure we provide the highest level of precision and service for our core clients, 
-                Traxis Manufacturing focuses exclusively on industrial, aerospace, medical, and commercial 
-                applications. We do not offer services for individual automotive projects, including custom 
-                car parts or engine restoration work. This specialized focus allows us to dedicate our 
-                expertise and resources to the complex, tight-tolerance components that our partners depend on.
-                Learn more about <a href="https://www.fda.gov/medical-devices" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">FDA medical device standards</a> and <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aircraft" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">FAA aerospace regulations</a> we comply with.
+                {{ industryNotice.description }}
+                <span v-if="industryNotice.links">
+                  Learn more about 
+                  <template v-for="(link, index) in industryNotice.links" :key="link.text">
+                    <a :href="link.url" target="_blank" rel="noopener noreferrer" class="text-traxis-red-600 hover:text-traxis-red-700 underline">{{ link.text }}</a><span v-if="index < industryNotice.links.length - 1"> and </span>
+                  </template>
+                  we comply with.
+                </span>
               </p>
             </div>
           </div>
@@ -263,21 +234,20 @@ Complex aluminum manifold featuring multiple intersecting bores with
     </section>
 
     <!-- CTA Section -->
-    <section class="section-padding bg-gray-900 text-white">
+    <section :class="`section-padding ${cta.backgroundColor || 'bg-gray-900'} text-white`">
       <div class="container-custom text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Start Your Project?
+          {{ cta.heading }}
         </h2>
         <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Let's discuss how our precision machining expertise can bring your designs to life. 
-          Get a detailed quote and timeline for your project.
+          {{ cta.description }}
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <NuxtLink to="/request-quote" class="btn-primary text-lg px-8 py-4">
-            Request a Quote
+          <NuxtLink :to="cta.primaryButton.link" class="btn-primary text-lg px-8 py-4">
+            {{ cta.primaryButton.text }}
           </NuxtLink>
-          <NuxtLink to="/contact" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
-            Contact Us
+          <NuxtLink :to="cta.secondaryButton.link" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-traxis-grey-900">
+            {{ cta.secondaryButton.text }}
           </NuxtLink>
         </div>
       </div>
@@ -288,18 +258,16 @@ Complex aluminum manifold featuring multiple intersecting bores with
 <script setup>
 import { ref } from 'vue'
 
-// Query content collections
-const { data: testimonialsData } = await useAsyncData('home-testimonials', () => {
-  return queryCollection('content').path('/home-testimonials').first()
-})
-
-const { data: servicesData } = await useAsyncData('home-services', () => {
-  return queryCollection('content').path('/home-services').first()
-})
-
-const { data: faqsData } = await useAsyncData('home-faqs', () => {
-  return queryCollection('content').path('/home-faqs').first()
-})
+// Fetch content from collections using .first() to get single objects
+const { data: hero } = await useAsyncData('home-hero', () => queryCollection('homeHero').first())
+const { data: industries } = await useAsyncData('home-industries', () => queryCollection('homeIndustries').first())
+const { data: services } = await useAsyncData('home-services', () => queryCollection('homeServices').first())
+const { data: advantages } = await useAsyncData('home-advantages', () => queryCollection('homeAdvantages').first())
+const { data: testimonials } = await useAsyncData('home-testimonials', () => queryCollection('homeTestimonials').first())
+const { data: featuredProject } = await useAsyncData('home-featured-project', () => queryCollection('homeFeaturedProject').first())
+const { data: faqsContent } = await useAsyncData('home-faqs', () => queryCollection('homeFaqs').first())
+const { data: industryNotice } = await useAsyncData('home-industry-notice', () => queryCollection('homeIndustryNotice').first())
+const { data: cta } = await useAsyncData('home-cta', () => queryCollection('homeCta').first())
 
 // FAQ functionality
 const activeFaq = ref(null)

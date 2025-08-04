@@ -1,0 +1,8 @@
+title: "Please Note: Our Specialization"
+description: "To ensure we provide the highest level of precision and service for our core clients, Traxis Manufacturing focuses exclusively on industrial, aerospace, medical, and commercial applications. We do not offer services for individual automotive projects, including custom car parts or engine restoration work. This specialized focus allows us to dedicate our expertise and resources to the complex, tight-tolerance components that our partners depend on."
+icon: "mdi:information"
+links:
+  - text: "FDA medical device standards"
+    url: "https://www.fda.gov/medical-devices"
+  - text: "FAA aerospace regulations"
+    url: "https://www.faa.gov/regulations_policies/handbooks_manuals/aircraft"

@@ -25,13 +25,6 @@ export default defineNuxtConfig({
     }
   },
 
-  // Content configuration
-  content: {
-    preview: {
-      api: 'https://api.nuxt.studio'
-    }
-  },
-
   // App configuration
   app: {
     head: {

@@ -1,0 +1,9 @@
+heading: "Ready to Start Your Project?"
+description: "Let's discuss how our precision machining expertise can bring your designs to life. Get a detailed quote and timeline for your project."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "Contact Us"
+  link: "/contact"
+backgroundColor: "bg-gray-900"

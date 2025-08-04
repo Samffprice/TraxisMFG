@@ -1,0 +1,19 @@
+title: "Precision CNC Machining with a "
+subtitle: "Partnership Approach"
+description: "Your Austin-based experts in CNC milling and turning for aerospace, medical, and industrial applications. Dedicated machinists providing personalized service."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "View Our Work"
+  link: "/work"
+backgroundImage: "/home-hero.webp"
+stats:
+  - value: "15+"
+    label: "Years Experience"
+  - value: "±0.001\""
+    label: "Precision Tolerance"
+  - value: "6 Week"
+    label: "Standard Turnaround"
+  - value: "100%"
+    label: "Austin-Based"

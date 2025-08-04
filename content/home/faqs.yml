@@ -1,6 +1,5 @@
----
-title: Frequently Asked Questions
-description: Common questions about our services and capabilities
+heading: "Frequently Asked Questions"
+subheading: "Get answers to common questions about our precision machining services and processes"
 faqs:
   - question: "What is your typical lead time for a project?"
     answer: "Our standard production timeline is typically 6 weeks from design approval to delivery. This allows us to dedicate the necessary time and attention to detail that high-precision components demand. For urgent requirements, expedited service may be available depending on project complexity and current capacity."
@@ -14,8 +13,3 @@ faqs:
     answer: "Yes! DFM collaboration is a core part of our service. Our experienced machinists review your designs and provide recommendations to improve manufacturability, reduce costs, and enhance quality without compromising functionality. This collaborative approach often results in better parts at lower costs."
   - question: "What are your quality control and inspection procedures?"
     answer: "Every part undergoes rigorous quality inspection using precision measurement equipment including CMM (Coordinate Measuring Machine). We provide first article inspection reports for initial parts and maintain statistical process control throughout production. All work is performed to ISO quality standards."
----
-
-# Frequently Asked Questions
-
-This content manages the FAQ section on the home page.

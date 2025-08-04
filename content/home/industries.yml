@@ -1,0 +1,10 @@
+heading: "Trusted by Leading Companies in"
+industries:
+  - name: "Aerospace"
+    icon: "mdi:airplane"
+  - name: "Medical Devices"
+    icon: "mdi:heart-pulse"
+  - name: "Industrial Automation"
+    icon: "mdi:cog"
+  - name: "Semiconductor"
+    icon: "mdi:chip"
