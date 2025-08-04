@@ -1,0 +1,15 @@
+heading: "Quality Assurance"
+description: "Every milled component undergoes rigorous quality inspection to ensure compliance with your specifications. Our quality control process includes in-process monitoring and final inspection using precision measurement equipment."
+image:
+  src: "https://images.unsplash.com/photo-1581092335878-7d6d14e42dd8?w=800&h=600&fit=crop&crop=center"
+  alt: "Quality inspection and measurement equipment"
+features:
+  - title: "CMM Inspection"
+    description: "Coordinate measuring machine for precise dimensional verification"
+    icon: "mdi:ruler"
+  - title: "First Article Inspection"
+    description: "Complete dimensional report for initial part approval"
+    icon: "mdi:certificate"
+  - title: "Statistical Process Control"
+    description: "Continuous monitoring to maintain consistent quality"
+    icon: "mdi:chart-line"

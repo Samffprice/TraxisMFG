@@ -1,0 +1,27 @@
+heading: "Applications & Industries"
+subheading: "Precision milling for critical applications across diverse industries"
+industries:
+  - title: "Aerospace"
+    icon: "mdi:airplane"
+    applications:
+      - "Structural components"
+      - "Engine parts"
+      - "Brackets and housings"
+      - "Heat exchangers"
+      - "Manifolds and fittings"
+  - title: "Medical Devices"
+    icon: "mdi:heart-pulse"
+    applications:
+      - "Surgical instruments"
+      - "Implant components"
+      - "Diagnostic equipment parts"
+      - "Precision housings"
+      - "Custom fixtures"
+  - title: "Industrial"
+    icon: "mdi:factory"
+    applications:
+      - "Automation components"
+      - "Precision fixtures"
+      - "Valve bodies"
+      - "Pump components"
+      - "Custom tooling"

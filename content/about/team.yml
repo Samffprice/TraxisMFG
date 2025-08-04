@@ -1,0 +1,45 @@
+heading: "Meet Our Dedicated Team"
+subheading: "Experienced professionals committed to precision and quality"
+members:
+  - id: 1
+    name: "Michael Rodriguez"
+    title: "Founder & President"
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+    bio: "Founded Traxis with a vision to provide exceptional precision machining through collaborative partnerships. Brings extensive experience in aerospace and medical device manufacturing."
+    experience: 25
+    certifications: "Six Sigma Black Belt"
+  - id: 2
+    name: "Sarah Chen"
+    title: "Lead Manufacturing Engineer"
+    photo: "https://images.unsplash.com/photo-1494790108755-2616b332e234?w=400&h=400&fit=crop&crop=face"
+    bio: "Oversees all manufacturing operations and quality systems. Expert in DFM optimization and process improvement with focus on aerospace applications."
+    experience: 18
+    certifications: "Certified Quality Engineer"
+  - id: 3
+    name: "David Thompson"
+    title: "Shop Foreman"
+    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+    bio: "Manages day-to-day shop operations and leads our team of skilled machinists. Specialist in 5-axis programming and complex setups."
+    experience: 22
+    certifications: "Master Machinist"
+  - id: 4
+    name: "Lisa Parker"
+    title: "Quality Manager"
+    photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
+    bio: "Ensures all parts meet or exceed customer specifications. Manages quality systems, inspection procedures, and customer compliance requirements."
+    experience: 15
+    certifications: "ASQ Certified"
+  - id: 5
+    name: "Robert Kim"
+    title: "Senior CNC Programmer"
+    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face"
+    bio: "Develops complex CNC programs for multi-axis machining. Specializes in medical device components and tight-tolerance aerospace parts."
+    experience: 16
+    certifications: "NIMS Certified"
+  - id: 6
+    name: "Amanda Foster"
+    title: "Customer Success Manager"
+    photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face"
+    bio: "Manages customer relationships and project coordination. Ensures clear communication throughout the manufacturing process from quote to delivery."
+    experience: 12
+    certifications: "PMP Certified"

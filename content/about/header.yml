@@ -1,0 +1,8 @@
+title: "About Traxis Manufacturing"
+description: "Austin-based precision machining experts committed to delivering exceptional quality through personalized service and collaborative partnerships."
+primaryButton:
+  text: "Work With Us"
+  link: "/request-quote"
+secondaryButton:
+  text: "Our Capabilities"
+  link: "/capabilities"

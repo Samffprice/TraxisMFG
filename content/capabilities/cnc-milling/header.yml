@@ -1,0 +1,15 @@
+title: "High-Precision CNC Milling Services"
+description: "Advanced milling capabilities for complex components requiring tight tolerances and superior surface finishes across a wide range of materials."
+breadcrumbs:
+  - text: "Home"
+    link: "/"
+  - text: "Capabilities"
+    link: "/capabilities"
+  - text: "CNC Milling"
+    link: "/capabilities/cnc-milling"
+primaryButton:
+  text: "Get Milling Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "See Milling Equipment"
+  link: "/capabilities/equipment"

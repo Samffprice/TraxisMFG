@@ -1,0 +1,8 @@
+heading: "Ready to Start Your Milling Project?"
+description: "Contact us to discuss your CNC milling requirements and get a detailed quote."
+primaryButton:
+  text: "Request Milling Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "View Equipment List"
+  link: "/capabilities/equipment"

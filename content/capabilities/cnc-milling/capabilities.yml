@@ -1,0 +1,30 @@
+heading: "Our Milling Capabilities"
+subheading: "Comprehensive milling solutions for diverse manufacturing needs"
+capabilities:
+  - title: "3-Axis Milling"
+    description: "Traditional milling for straightforward geometries, pockets, slots, and holes. Ideal for brackets, plates, and simple mechanical components."
+    icon: "mdi:axis-z-arrow"
+    color: "bg-traxis-red-600"
+    features:
+      - "Work envelope up to 24\" x 16\" x 20\""
+      - "High-speed spindles up to 15,000 RPM"
+      - "Automatic tool changers up to 40 tools"
+    featured: false
+  - title: "4-Axis Milling"
+    description: "Rotary axis capability for cylindrical features, angular surfaces, and reduced setup requirements. Perfect for complex brackets and housings."
+    icon: "mdi:rotate-orbit"
+    color: "bg-traxis-grey-700"
+    features:
+      - "Continuous rotary axis positioning"
+      - "Reduced setup time and improved accuracy"
+      - "Complex angular and helical features"
+    featured: false
+  - title: "5-Axis Milling"
+    description: "Simultaneous 5-axis machining for the most complex geometries. Eliminates multiple setups and achieves superior surface finishes on complex contours."
+    icon: "mdi:rotate-3d-variant"
+    color: "bg-traxis-red-600"
+    features:
+      - "Simultaneous 5-axis capability"
+      - "Complex sculptured surfaces"
+      - "Aerospace and medical components"
+    featured: true

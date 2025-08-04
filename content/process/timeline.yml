@@ -1,0 +1,29 @@
+heading: "Timeline & Delivery"
+subheading: "Transparent scheduling and reliable delivery"
+standard:
+  title: "Standard Timeline"
+  duration: "6 Weeks"
+  description: "Our standard production timeline allows us to dedicate the necessary time and attention to detail that high-precision components demand, ensuring we deliver the highest quality results."
+  icon: "mdi:calendar-clock"
+  breakdown:
+    - phase: "Quote Response"
+      duration: "1-2 Business Days"
+    - phase: "Design Review"
+      duration: "2-3 Business Days"
+    - phase: "Manufacturing"
+      duration: "4-5 Weeks"
+    - phase: "Final Inspection"
+      duration: "2-3 Business Days"
+expedited:
+  title: "Expedited Service"
+  subtitle: "Rush Available"
+  description: "Need a faster turnaround? Contact us directly to discuss the possibility and requirements for expedited service options. Subject to capacity and project complexity."
+  icon: "mdi:lightning-bolt"
+  criteria:
+    - "Project complexity assessment"
+    - "Current shop capacity"
+    - "Material availability"
+    - "Premium pricing applies"
+  button:
+    text: "Discuss Rush Service"
+    link: "/contact"

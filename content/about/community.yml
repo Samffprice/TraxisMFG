@@ -1,0 +1,8 @@
+heading: "Proud Members of the Austin Community"
+description: "As an Austin-based company, we're committed to supporting the local technology and manufacturing ecosystem. We believe in building long-term relationships with our clients and contributing to the growth of Austin's advanced manufacturing sector."
+primaryButton:
+  text: "See Our Work"
+  link: "/work"
+secondaryButton:
+  text: "Work With Us"
+  link: "/request-quote"

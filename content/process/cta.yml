@@ -1,0 +1,8 @@
+heading: "Ready to Experience Our Process?"
+description: "Start your precision machining project today and experience our collaborative, quality-focused approach firsthand."
+primaryButton:
+  text: "Request a Quote"
+  link: "/request-quote"
+secondaryButton:
+  text: "Contact Us"
+  link: "/contact"

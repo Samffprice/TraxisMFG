@@ -1,0 +1,10 @@
+heading: "Our Story & Mission"
+paragraphs:
+  - "Founded in 2009, Traxis Manufacturing LLC was established with a clear vision: to provide precision CNC machining services that combine cutting-edge technology with the personal touch of a dedicated team. Located in the heart of Austin, Texas, we've grown from a small machine shop to a trusted partner for companies across aerospace, medical, and industrial sectors."
+  - "Our mission is simple yet powerful: to deliver exceptional precision machining through collaborative partnerships, unwavering quality standards, and personalized service that treats every project as if it were our own. We believe that the best manufacturing results come from understanding not just what our clients need, but why they need it."
+  - "At Traxis, we're not just machinists – we're problem solvers, collaborators, and craftsmen who take pride in transforming complex designs into precision reality. Every component we produce reflects our commitment to excellence and our dedication to our clients' success."
+image:
+  src: "/about-us.jpg"
+  webpSrc: "/about-us.webp"
+  alt: "Traxis Manufacturing facility in Austin, Texas"
+  caption: "Our Austin facility at 511 East Saint Elmo Road"

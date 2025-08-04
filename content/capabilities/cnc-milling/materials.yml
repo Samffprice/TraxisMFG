@@ -1,0 +1,34 @@
+heading: "Materials We Mill"
+subheading: "Expertise across metals, plastics, and specialty alloys"
+categories:
+  - title: "Aluminum Alloys"
+    materials:
+      - "6061-T6 (General purpose)"
+      - "7075-T6 (High strength)"
+      - "2024-T3 (Aerospace)"
+      - "5083-H116 (Marine)"
+      - "6063-T6 (Extrusion)"
+  - title: "Stainless Steel"
+    materials:
+      - "303 (Free machining)"
+      - "304/304L (General purpose)"
+      - "316/316L (Corrosion resistant)"
+      - "17-4 PH (Precipitation hardening)"
+      - "15-5 PH (High strength)"
+  - title: "Engineering Plastics"
+    materials:
+      - "Delrin (POM)"
+      - "PEEK (High performance)"
+      - "Ultem (PEI)"
+      - "Nylon 6/6 (PA6)"
+      - "Polycarbonate (PC)"
+  - title: "Specialty Alloys"
+    materials:
+      - "Titanium Ti-6Al-4V"
+      - "Inconel 718"
+      - "Brass C360"
+      - "Bronze C932"
+      - "Tool steels"
+viewAllButton:
+  text: "View Complete Materials List"
+  link: "/capabilities/materials"
